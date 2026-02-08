@@ -1,11 +1,12 @@
 package framework.actions;
+
 import com.aventstack.extentreports.ExtentTest;
-import framework.data.factory.JsonDataFactory;
+import framework.readers.TestDataManager;
 import framework.data.model.LoginData;
+import framework.data.model.TestCaseData;
 import framework.driver.DriverManager;
-import framework.enums.UserType;
+import framework.enums.LoginType;
 import framework.reports.ExtentManager;
-import framework.wait.WaitUtil;
 import org.openqa.selenium.WebDriver;
 import pages.home.HomePage;
 import pages.login.LoginPopup;
@@ -13,15 +14,18 @@ import utils.ScreenshotUtil;
 
 public class LoginAction {
 
-    public static void login(UserType userType) {
+    public static TestCaseData<LoginData> login(LoginType loginType) {
 
         WebDriver driver = DriverManager.getDriver();
         ExtentTest test = ExtentManager.getTest();
 
         ScreenshotUtil screenshot =
-                new ScreenshotUtil(driver, "LoginFlow", test);
+                new ScreenshotUtil(driver, "Login_", test);
 
-        LoginData data = JsonDataFactory.getLoginData(userType);
+        TestCaseData<LoginData> testCase =
+                TestDataManager.login(loginType);
+
+        LoginData data = testCase.getData();
 
         HomePage home = new HomePage(driver, screenshot);
         LoginPopup login = new LoginPopup(driver, screenshot);
@@ -33,9 +37,7 @@ public class LoginAction {
         login.enterEmail(data.getEmail())
                 .enterPassword(data.getPassword())
                 .clickLoginButton();
+
+        return testCase;
     }
 }
-
-
-
-

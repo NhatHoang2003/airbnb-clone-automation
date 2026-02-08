@@ -1,28 +1,31 @@
 package framework.data.dataprovider;
 
-import framework.enums.UserType;
+import framework.enums.LoginType;
 import org.testng.annotations.DataProvider;
 
-public final class LoginDataProvider {
+public class LoginDataProvider {
 
     @DataProvider(name = "validCredentials")
     public static Object[][] validCredentials() {
         return new Object[][]{
-                { UserType.VALID_USER }
+                { LoginType.VALID_USER }
         };
     }
 
     @DataProvider(name = "invalidCredentials")
     public static Object[][] invalidCredentials() {
         return new Object[][]{
-                { UserType.INVALID_PASSWORD }
+                { LoginType.INVALID_EMAIL },
+                { LoginType.INVALID_PASSWORD }
         };
     }
 
     @DataProvider(name = "emptyFields")
     public static Object[][] emptyFields() {
         return new Object[][]{
-                { UserType.EMPTY_EMAIL }
+                { LoginType.EMPTY_USER }
         };
     }
 }
+
+

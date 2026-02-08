@@ -21,7 +21,7 @@ public class ScreenshotUtil {
         this.test = test;
         this.stepCount = 0;
 
-        String timeStamp = new SimpleDateFormat("yyyy_MMdd_HH-mm-ss")
+        String timeStamp = new SimpleDateFormat("yyyy_MM_dd_HH-mm-ss")
                 .format(new Date());
 
         screenshotDir = System.getProperty("user.dir")
@@ -32,39 +32,33 @@ public class ScreenshotUtil {
         new File(screenshotDir).mkdirs();
     }
 
-    public void capture(By locator, String stepName) {
+    public void capture(String stepName) {
         try {
-            driver.findElement(locator);
-
             File src = ((TakesScreenshot) driver)
                     .getScreenshotAs(OutputType.FILE);
 
             stepCount++;
 
-            String safeStepName =
-                    stepName.replaceAll("[\\\\/:*?\"<>|]", "_");
-
             String fileName =
-                    "Step_" + stepCount + "_" + safeStepName + ".png";
-
-            String absolutePath = screenshotDir + "/" + fileName;
+                    "Step_" + stepCount + "_" +
+                            stepName.replaceAll("[\\\\/:*?\"<>|]", "_") +
+                            ".jpg";
 
             Files.copy(
                     src.toPath(),
-                    new File(absolutePath).toPath(),
+                    new File(screenshotDir, fileName).toPath(),
                     StandardCopyOption.REPLACE_EXISTING
             );
 
             if (test != null) {
                 test.info(stepName)
-                        .addScreenCaptureFromPath(absolutePath);
+                        .addScreenCaptureFromPath(
+                                screenshotDir + "/" + fileName
+                        );
             }
-
         } catch (Exception e) {
-            if (test != null) {
-                test.fail("Cannot capture screenshot: " + stepName);
-            }
             e.printStackTrace();
         }
     }
+
 }

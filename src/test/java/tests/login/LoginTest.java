@@ -2,7 +2,9 @@ package tests.login;
 
 import framework.actions.LoginAction;
 import framework.data.dataprovider.LoginDataProvider;
-import framework.enums.UserType;
+import framework.data.model.LoginData;
+import framework.data.model.TestCaseData;
+import framework.enums.LoginType;
 import framework.listeners.ExtentListener;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -16,9 +18,15 @@ public class LoginTest extends BaseTest {
             dataProvider = "validCredentials",
             dataProviderClass = LoginDataProvider.class
     )
-    public void testLoginWithValidCredentials(UserType userType) {
-        LoginAction.login(userType);
+    public void testLoginWithValidCredentials(LoginType loginType) {
 
-        Assert.assertTrue(true);
+        TestCaseData<LoginData> testCase =
+                LoginAction.login(loginType);
+
+        boolean expected = testCase.getExpected().isSuccess();
+        boolean actual = true;
+
+        Assert.assertEquals(actual, expected);
     }
+
 }

@@ -6,40 +6,65 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utils.HighlightUtil;
+import utils.ScreenshotUtil;
 
 public class ElementActions {
 
     private final WebDriver driver;
-    private final WaitUtil waitUtil;
+    private final WaitUtil wait;
+    private final ScreenshotUtil screenshot;
 
-    public ElementActions(WebDriver driver) {
+    public ElementActions(WebDriver driver, ScreenshotUtil screenshot) {
         this.driver = driver;
-        this.waitUtil = new WaitUtil(driver);
+        this.wait = new WaitUtil(driver);
+        this.screenshot = screenshot;
     }
 
-    public void clicksBy(By locator) {
-        WebElement element = waitUtil.waitFor(locator, WaitType.CLICKABLE);
+
+    public ElementActions clicksBy(By locator, String stepName) {
+        WebElement element = wait.waitFor(locator, WaitType.CLICKABLE);
+
         HighlightUtil.highlightElement(driver, element);
+
         element.click();
+
+        screenshot.capture(stepName);
+        return this;
     }
 
-    public void clicksElement(WebElement element) {
-        waitUtil.waitFor(element, WaitType.CLICKABLE);
+    public ElementActions clicksElement(WebElement element, String stepName) {
+        wait.waitFor(element, WaitType.CLICKABLE);
+
         HighlightUtil.highlightElement(driver, element);
+
         element.click();
+
+        screenshot.capture(stepName);
+        return this;
     }
 
-    public void typeBy(By locator, String text) {
-        WebElement element = waitUtil.waitFor(locator, WaitType.VISIBLE);
+
+    public ElementActions typeBy(By locator, String text, String stepName) {
+        WebElement element = wait.waitFor(locator, WaitType.VISIBLE);
+
         HighlightUtil.highlightElement(driver, element);
+
         element.clear();
         element.sendKeys(text);
+
+        screenshot.capture(stepName);
+        return this;
     }
 
-    public void typeElement(WebElement element, String text) {
-        waitUtil.waitFor(element, WaitType.VISIBLE);
+    public ElementActions typeElement(WebElement element, String text, String stepName) {
+        wait.waitFor(element, WaitType.VISIBLE);
+
         HighlightUtil.highlightElement(driver, element);
+
         element.clear();
         element.sendKeys(text);
+
+        screenshot.capture(stepName);
+        return this;
     }
 }

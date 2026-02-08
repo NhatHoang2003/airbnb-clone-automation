@@ -9,11 +9,8 @@ import static pages.home.HomeLocator.*;
 
 public class HomePage extends BasePage {
 
-    private ScreenshotUtil screenshotUtil;
-
     public HomePage(WebDriver driver, ScreenshotUtil screenshotUtil) {
-        super(driver);
-        this.screenshotUtil = screenshotUtil;
+        super(driver, screenshotUtil);
     }
 
     public HomePage open() {
@@ -21,22 +18,18 @@ public class HomePage extends BasePage {
         return this;
     }
 
-
     public HomePage clickProfileIcon() {
-        actions.clicksBy(PROFILE_ICON);
-        screenshotUtil.capture(PROFILE_ICON, "Step1_click_profile_icon");
+        actions.clicksBy(PROFILE_ICON, "Click profile icon");
         return this;
     }
 
     public HomePage clickLoginOption() {
-        actions.clicksBy(LOGIN_MENU_OPTION);
-        screenshotUtil.capture(LOGIN_MENU_OPTION, "Step_2_click_login_option");
+        actions.clicksBy(LOGIN_MENU_OPTION, "Click login option");
         return this;
     }
 
     public HomePage clickRegistrationOption() {
-        actions.clicksBy(REGISTRATION_MENU_OPTION);
-        screenshotUtil.capture(REGISTRATION_MENU_OPTION, "Step_3_click_registration_option");
+        actions.clicksBy(REGISTRATION_MENU_OPTION, "Click registration option");
         return this;
     }
 }

@@ -1,41 +1,39 @@
 package framework.data.factory;
 
-import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
-import framework.data.model.LoginData;
-import framework.enums.UserType;
+import framework.data.model.*;
+import framework.enums.LoginType;
+import framework.enums.RegisterType;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
-import java.lang.reflect.Type;
-import java.util.Map;
 
 public class JsonDataFactory {
 
-    private static final Map<String, LoginData> LOGIN_DATA;
+    private static final UserDataRoot DATA;
 
     static {
         try {
             InputStream is = JsonDataFactory.class
                     .getClassLoader()
-                    .getResourceAsStream("data/login.json");
+                    .getResourceAsStream("data/userdata.json");
 
             if (is == null) {
-                throw new RuntimeException("Not found login.json");
+                throw new RuntimeException("Not found data/userdata.json");
             }
 
-            Reader reader = new InputStreamReader(is);
-            Type type = new TypeToken<Map<String, LoginData>>() {}.getType();
-            LOGIN_DATA = new Gson().fromJson(reader, type);
+            DATA = new Gson().fromJson(new InputStreamReader(is), UserDataRoot.class);
 
         } catch (Exception e) {
             throw new RuntimeException("Load json failure", e);
         }
     }
 
-    public static LoginData getLoginData(UserType userType) {
-        return LOGIN_DATA.get(userType.name());
+    public static TestCaseData<LoginData> getLoginCase(LoginType type) {
+        return DATA.getLogin().get(type.name());
+    }
+
+    public static TestCaseData<RegisterData> getRegisterCase(RegisterType type) {
+        return DATA.getRegister().get(type.name());
     }
 }
-

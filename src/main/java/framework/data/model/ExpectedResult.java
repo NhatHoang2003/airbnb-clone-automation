@@ -1,8 +1,11 @@
 package framework.data.model;
 
-public class LoginExpected {
+public class ExpectedResult {
     private boolean success;
 
-    public boolean isSuccess() { return success; }
+    public boolean isSuccess() {
+        return success;
+    }
 }
+
 

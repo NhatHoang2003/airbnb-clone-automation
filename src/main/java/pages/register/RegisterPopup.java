@@ -1,4 +1,8 @@
 package pages.register;
 
-public class RegisterPage {
+public class RegisterPopup {
+
+    public RegisterPopup() {}
+
+
 }
