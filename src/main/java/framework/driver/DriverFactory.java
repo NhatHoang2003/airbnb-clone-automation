@@ -3,6 +3,7 @@ package framework.driver;
 import framework.enums.BrowserType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -15,7 +16,7 @@ public final class DriverFactory {
 
         switch (browser) {
             case CHROME:
-                driver = new ChromeDriver();
+                driver = createChromeDriver();
                 break;
             case EDGE:
                 driver = new EdgeDriver();
@@ -28,6 +29,29 @@ public final class DriverFactory {
         }
 
         return driver;
+    }
+
+    private static WebDriver createChromeDriver() {
+        ChromeOptions options = new ChromeOptions();
+        
+        // Disable CDP version mismatch warning
+        options.setCapability("goog:loggingPrefs", new java.util.HashMap<String, String>() {{
+            put("browser", "INFO");
+        }});
+        
+        // Add options để tránh session disconnect
+        options.addArguments(
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--disable-blink-features=AutomationControlled",
+                "--disable-background-networking",
+                "--disable-breakpad",
+                "--disable-client-side-phishing-detection",
+                "--disable-hang-monitor"
+        );
+        
+        return new ChromeDriver(options);
     }
 }
 

@@ -40,4 +40,32 @@ public class LoginAction {
 
         return testCase;
     }
+
+    public static void loginForBooking(LoginType loginType) {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "LoginBooking_", test);
+
+        TestCaseData<LoginData> testCase =
+                TestDataManager.login(loginType);
+
+        LoginData data = testCase.getData();
+
+        HomePage home = new HomePage(driver, screenshot);
+        LoginPopup login = new LoginPopup(driver, screenshot);
+
+        home.open();
+
+        home.clickProfileIcon()
+                .clickLoginOption();
+
+        login.enterEmail(data.getEmail())
+                .enterPassword(data.getPassword())
+                .clickLoginButton();
+
+        login.waitUntilLoginPopupClosed();
+    }
 }

@@ -28,6 +28,9 @@ public class WaitUtil {
                 return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
             case PRESENT:
                 return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+            case INVISIBLE:
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+                return null;
             default:
                 return driver.findElement(locator);
         }
@@ -40,8 +43,20 @@ public class WaitUtil {
                 return wait.until(ExpectedConditions.elementToBeClickable(element));
             case VISIBLE:
                 return wait.until(ExpectedConditions.visibilityOf(element));
+            case INVISIBLE:
+                wait.until(ExpectedConditions.invisibilityOf(element));
+                return null;
             default:
                 return element;
         }
+    }
+
+    // ====== LOADING ======
+    public void waitForLoadingDisappear() {
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.fixed.inset-0")));
+    }
+
+    public void waitForLoadingDisappear(By loadingLocator) {
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingLocator));
     }
 }

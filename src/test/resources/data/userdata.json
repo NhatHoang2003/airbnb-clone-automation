@@ -2,7 +2,7 @@
   "login": {
     "VALID_USER": {
       "data": {
-        "email": "test@gmail.com",
+        "email": "T09N04@gmail.com",
         "password": "123456"
       },
       "expected": {
