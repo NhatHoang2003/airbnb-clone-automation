@@ -4,6 +4,7 @@ import framework.actions.ElementActions;
 import framework.enums.WaitType;
 import framework.wait.WaitUtil;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utils.ScreenshotUtil;
@@ -34,5 +35,21 @@ public class BasePage {
 
     protected String getText(By locator) {
         return waitUtil.waitFor(locator, WaitType.VISIBLE).getText();
+    }
+
+    public void highlight(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].style.border='3px solid red';" +
+                        "arguments[0].style.boxShadow='0 0 10px red';",
+                element
+        );
+    }
+
+    public void slowDown() {
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -32,10 +32,9 @@ public class RoomPage extends BasePage {
     }
 
     public RoomDetailPage clickFirstRoom() {
-        // 1️⃣ Wait presence (KHÔNG dùng visibility)
+
         wait.waitFor(RoomLocator.ROOM_LINKS, WaitType.PRESENT);
 
-        // 2️⃣ Lấy list
         List<WebElement> rooms =
                 driver.findElements(RoomLocator.ROOM_LINKS);
 
@@ -45,11 +44,9 @@ public class RoomPage extends BasePage {
 
         WebElement firstRoom = rooms.get(0);
 
-        // 3️⃣ Scroll xuống một chút (React hay cần)
         ((JavascriptExecutor) driver)
                 .executeScript("window.scrollBy(0,300);");
 
-        // 4️⃣ Click bình thường trước
         try {
             firstRoom.click();
         } catch (Exception e) {

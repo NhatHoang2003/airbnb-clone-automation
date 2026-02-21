@@ -13,13 +13,9 @@ public class RoomAction {
 
     private RoomAction() {}
 
-    public static boolean searchRoom() {
+    public static boolean searchRoom(ScreenshotUtil screenshot) {
 
         WebDriver driver = DriverManager.getDriver();
-        ExtentTest test = ExtentManager.getTest();
-
-        ScreenshotUtil screenshot =
-                new ScreenshotUtil(driver, "Room_", test);
 
         HomePage homePage = new HomePage(driver, screenshot);
 
@@ -30,13 +26,9 @@ public class RoomAction {
         return roomPage.isRoomListDisplayed();
     }
 
-    public static RoomDetailPage openFirstRoom() {
+    public static RoomDetailPage openFirstRoom(ScreenshotUtil screenshot) {
 
         WebDriver driver = DriverManager.getDriver();
-        ExtentTest test = ExtentManager.getTest();
-
-        ScreenshotUtil screenshot =
-                new ScreenshotUtil(driver, "TC16_", test);
 
         RoomPage roomPage = new RoomPage(driver, screenshot);
 

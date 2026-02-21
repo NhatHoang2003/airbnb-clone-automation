@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import pages.profile.ProfilePage;
 import pages.rooms.RoomLocator;
 import utils.ScreenshotUtil;
 
@@ -56,7 +57,10 @@ public class RoomDetailPage extends BasePage {
                 "//span[@class='rdrDayNumber']/span[text()='" + day + "']"
         );
 
-        waitUtil.waitFor(dateLocator, WaitType.CLICKABLE);
+        WebElement date = waitUtil.waitFor(dateLocator, WaitType.CLICKABLE);
+
+        highlight(date);
+        slowDown();
 
         actions.clicksBy(dateLocator, "Select Date " + day);
 
@@ -86,22 +90,25 @@ public class RoomDetailPage extends BasePage {
     // ===== CLICK BOOKING =====
     public RoomDetailPage clickBooking() {
 
-        // 1️⃣ Đợi button xuất hiện trong DOM
+        // 1️. Đợi button xuất hiện
         WebElement bookingBtn =
                 waitUtil.waitFor(RoomDetailLocator.BOOKING_BUTTON, WaitType.VISIBLE);
 
-        // 2️⃣ Scroll toàn trang xuống gần cuối
+        // 2. Scroll trang xuống gần cuối
         ((JavascriptExecutor) driver)
                 .executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
-        // 3️⃣ Scroll chính xác vào button (quan trọng)
+        // 3️. Scroll chính xác vào button (quan trọng)
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView({block:'center'});", bookingBtn);
 
-        // 4️⃣ Đợi clickable
+        // 4️. Đợi clickable
         waitUtil.waitFor(bookingBtn, WaitType.CLICKABLE);
 
-        // 5️⃣ Click an toàn
+        highlight(bookingBtn);
+        slowDown();
+
+        // 5. Click an toàn
         try {
             bookingBtn.click();
         } catch (Exception e) {
@@ -120,10 +127,8 @@ public class RoomDetailPage extends BasePage {
         WebElement confirmBtn =
                 waitUtil.waitFor(RoomDetailLocator.CONFIRM_BUTTON, WaitType.VISIBLE);
 
-        ((JavascriptExecutor) driver)
-                .executeScript("arguments[0].scrollIntoView({block:'center'});", confirmBtn);
-
-        waitUtil.waitFor(confirmBtn, WaitType.CLICKABLE);
+        highlight(confirmBtn);
+        slowDown();
 
         try {
             confirmBtn.click();
@@ -132,14 +137,11 @@ public class RoomDetailPage extends BasePage {
                     .executeScript("arguments[0].click();", confirmBtn);
         }
 
-        screenshotUtil.capture("Clicked Confirm Booking");
+        WebElement successMsg =
+                waitUtil.waitFor(RoomDetailLocator.BOOKING_SUCCESS_MESSAGE,
+                        WaitType.VISIBLE);
 
-        // 🔥 QUAN TRỌNG: đợi notification xuất hiện
-        waitUtil.waitFor(
-                RoomDetailLocator.BOOKING_SUCCESS_MESSAGE,
-                WaitType.VISIBLE
-        );
-
+        highlight(successMsg);
         screenshotUtil.capture("Booking Success Message");
 
         return this;
@@ -167,6 +169,9 @@ public class RoomDetailPage extends BasePage {
                     WaitType.VISIBLE
             );
 
+            highlight(loginMsg);
+            slowDown();
+
             screenshotUtil.capture("Login Required Notification");
 
             return loginMsg.isDisplayed();
@@ -176,13 +181,45 @@ public class RoomDetailPage extends BasePage {
         }
     }
 
+    public RoomDetailPage clickProfileIcon() {
+
+        waitUtil.waitForLoadingDisappear(IMAGE_MASK);
+
+        WebElement profile =
+                waitUtil.waitFor(RoomDetailLocator.PROFILE_ICON, WaitType.VISIBLE);
+
+        waitUtil.waitFor(profile, WaitType.CLICKABLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", profile);
+
+        try {
+            profile.click();
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].click();", profile);
+        }
+
+        return this;
+    }
+
+    public ProfilePage clickDashboard() {
+
+        actions.clicksBy(
+                RoomDetailLocator.DASHBOARD_BUTTON,
+                "Click Dashboard"
+        );
+
+        return new ProfilePage(driver, screenshotUtil);
+    }
+
     // ===== FULL FLOW =====
     public boolean booking(String checkInDay) {
 
         selectCheckInDate()
-                .clickNextMonthButton()   // ← Bấm next month trước
-                .selectDate(checkInDay)   // ← Chọn ngày
-                .closePopup()             // ← Đóng popup
+                .clickNextMonthButton()   // Bấm next month
+                .selectDate(checkInDay)   // Chọn ngày
+                .closePopup()             // Đóng popup
                 .clickBooking()
                 .confirmBooking();
 
