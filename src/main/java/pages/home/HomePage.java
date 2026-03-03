@@ -64,6 +64,51 @@ public class HomePage extends BasePage {
         return new RoomPage(driver, screenshotUtil);
     }
 
+    public HomePage clickAddGuest() {
+        wait.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);
+
+        actions.clicksBy(DROPDOWN_ADD_GUEST, "Click 'Thêm khách'");
+        return this;
+    }
+
+    public HomePage increaseGuest(int times) {
+
+        for (int i = 0; i < times; i++) {
+            actions.clicksBy(HomeLocator.PLUS_GUEST_BUTTON,
+                    "Click '+' increase guest - time: " + (i + 1));
+        }
+
+        return this;
+    }
+
+    public HomePage openDatePicker() {
+        wait.waitFor(LOADING_OVERLAY, WaitType.INVISIBLE);
+        actions.clicksBy(DATE_INPUT, "Open date picker");
+        wait.waitFor(NEXT_MONTH_BUTTON, WaitType.VISIBLE);
+        return this;
+    }
+
+    public HomePage goToNextMonth() {
+        actions.clicksBy(NEXT_MONTH_BUTTON, "Click next month");
+        return this;
+    }
+
+    public HomePage selectDay(String day) {
+
+        String xpath =
+                "//span[@class='rdrDayNumber']/span[text()='" + day + "']";
+
+        WebElement date = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", date);
+        slowDown();
+        date.click();
+        slowDown();
+        return this;
+    }
+
     public void waitForLoginSuccess() {
         try {
             wait.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);

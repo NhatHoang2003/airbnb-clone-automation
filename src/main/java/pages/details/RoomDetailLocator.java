@@ -20,4 +20,6 @@ public class RoomDetailLocator {
     public static final By LOGIN_REQUIRED_NOTIFICATION = By.xpath("//div[contains(@class,'ant-notification-notice-description') and normalize-space()='Vui lòng đăng nhập để tiếp tục đặt phòng.']");
     public static final By DASHBOARD_BUTTON = By.xpath("//a[@href='/info-user' and contains(text(), 'Dashboard')]");
     public static final By PROFILE_ICON = By.cssSelector(".rounded-full");
+    public static final By PRICE_PER_NIGHT = By.xpath("//div[span[contains(@class,'font-bold') and contains(text(),'$')]]/span");
+    public static final By TOTAL_PRICE = By.xpath("(//p[contains(@class,'font-mono') and contains(@class,'font-bold')])[last()]");
 }
