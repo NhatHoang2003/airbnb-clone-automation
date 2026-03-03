@@ -7,25 +7,10 @@
     "INVALID_PASSWORD": {
       "email": "test@gmail.com",
       "password": "123"
-    }
-  },
-
-  "register": {
-    "VALID_USER": {
-      "name": "Hoang Le",
-      "email": "test@gmail.com",
-      "password": "123456",
-      "phoneNumber": "0909123456",
-      "birthday": "2002-08-15",
-      "gender": "MALE"
     },
     "EMPTY_USER": {
-      "name": "",
       "email": "",
-      "password": "",
-      "phoneNumber": "",
-      "birthday": "",
-      "gender": ""
+      "password": ""
     }
   }
 }

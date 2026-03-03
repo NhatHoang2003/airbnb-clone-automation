@@ -7,18 +7,16 @@ public class RegisterDataProvider {
     @DataProvider(name = "validCredentials")
     public static Object[][] validCredentials() {
         return new Object[][]{
-                { RegisterType.VALID_USER }
+                { RegisterType.VALID_CREDENTIALS}
         };
     }
 
     @DataProvider(name = "invalidCredentials")
     public static Object[][] invalidCredentials() {
         return new Object[][] {
-                { RegisterType.INVALID_EMAIL },
-                { RegisterType.INVALID_PASSWORD },
-                { RegisterType.INVALID_PHONE },
-                { RegisterType.INVALID_BIRTHDAY },
-                { RegisterType.INVALID_GENDER }
+                { RegisterType.INVALID_CREDENTAILS },
+                { RegisterType.INVALID_EMAIL_FORMAT },
+                { RegisterType.INVALID_PHONE }
         };
     }
 

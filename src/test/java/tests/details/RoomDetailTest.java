@@ -33,7 +33,7 @@ public class RoomDetailTest extends BaseTest {
                 new ScreenshotUtil(driver, "TC16_", test);
 
         // 1. Login cho booking
-        LoginAction.loginForBooking(LoginType.VALID_USER);
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
 
         // 2. Search
         Assert.assertTrue(RoomAction.searchRoom(screenshot), "Room list not displayed");

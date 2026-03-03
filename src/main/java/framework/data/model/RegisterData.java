@@ -8,7 +8,6 @@ public class RegisterData {
     private String phoneNumber;
     private String birthday;
     private String gender;
-    private boolean success;
 
     public String getName() { return name; }
     public String getEmail() { return email; }
@@ -16,5 +15,4 @@ public class RegisterData {
     public String getPhoneNumber() { return phoneNumber; }
     public String getBirthday() { return birthday; }
     public String getGender() { return gender; }
-    public boolean isSuccess() { return success; }
 }

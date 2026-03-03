@@ -1,12 +1,15 @@
 package framework.enums;
 
 public enum RegisterType {
-    VALID_USER,
-    INVALID_NAME,
-    INVALID_EMAIL,
-    INVALID_PASSWORD,
+
+//    === valid ====
+    VALID_CREDENTIALS,
+
+//    === invalid ====
+    INVALID_CREDENTAILS,
+    INVALID_EMAIL_FORMAT,
     INVALID_PHONE,
-    INVALID_BIRTHDAY,
-    INVALID_GENDER,
+
+//    === empty ===
     EMPTY_USER
 }

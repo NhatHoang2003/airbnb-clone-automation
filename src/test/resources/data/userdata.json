@@ -1,116 +1,136 @@
 {
   "login": {
-    "VALID_USER": {
+
+    "VALID_CREDENTIALS": {
       "data": {
-        "email": "T09N04@gmail.com",
+        "email": "hoangle8122003@gmail.com",
         "password": "123456"
       },
       "expected": {
-        "success": true
+        "success": true,
+        "message": "Đăng nhập thành công"
       }
     },
 
-    "INVALID_EMAIL": {
+    "INVALID_CREDENTIALS": {
+      "data": {
+        "email": "test@gmail.com",
+        "password": "123"
+      },
+      "expected": {
+        "success": false,
+        "message": "Email hoặc mật khẩu không đúng !"
+      }
+    },
+
+    "INVALID_EMAIL_FORMAT": {
       "data": {
         "email": "testgmail.com",
         "password": "123456"
       },
       "expected": {
-        "success": false
+        "success": false,
+        "message": "Vui lòng nhập đúng định dạng email"
       }
     },
 
-    "INVALID_PASSWORD": {
+    "EMPTY_FIELD": {
       "data": {
-        "email": "test@gmail.com",
-        "password": "123"
+        "email": "",
+        "password": "123456"
       },
       "expected": {
-        "success": false
+        "success": false,
+        "message": "Vui lòng không bỏ trống"
       }
     },
 
-    "EMPTY_USER": {
-      "data": {},
+    "EMPTY_PASSWORD": {
+      "data": {
+        "email": "test@gmail.com",
+        "password": ""
+      },
       "expected": {
-        "success": false
+        "success": false,
+        "message": "Vui lòng không bỏ trống"
       }
     }
   },
 
   "register": {
-    "VALID_USER": {
+
+    "VALID_CREDENTIALS": {
       "data": {
         "name": "Hoang Le",
-        "email": "test@gmail.com",
+        "email": "newuser05@gmail.com",
+        "password": "123456",
+        "phoneNumber": "0909123456",
+        "birthday": "08/12/2003",
+        "gender": "Nam"
+      },
+      "expected": {
+        "success": true,
+        "message": "Đăng ký thành công"
+      }
+    },
+
+    "INVALID_CREDENTIALS": {
+      "data": {
+        "name": "Hoang Le",
+        "email": "newuser@gmail.com",
         "password": "123456",
         "phoneNumber": "0909123456",
         "birthday": "2002-08-15",
-        "gender": "MALE"
+        "gender": "Nam"
       },
       "expected": {
-        "success": true
+        "success": true,
+        "message": "Email đã tồn tại !"
       }
     },
 
-    "INVALID_NAME": {
+    "INVALID_EMAIL_FORMAT": {
       "data": {
-        "name": ""
+        "name": "Hoang Le",
+        "email": "testgmail.com",
+        "password": "123456",
+        "phoneNumber": "0909123456",
+        "birthday": "2002-08-15",
+        "gender": "Nam"
       },
       "expected": {
-        "success": false
-      }
-    },
-
-    "INVALID_EMAIL": {
-      "data": {
-        "email": "testgmail.com"
-      },
-      "expected": {
-        "success": false
-      }
-    },
-
-    "INVALID_PASSWORD": {
-      "data": {
-        "password": "123"
-      },
-      "expected": {
-        "success": false
+        "success": false,
+        "message": "Vui lòng nhập đúng định dạng email"
       }
     },
 
     "INVALID_PHONE": {
       "data": {
-        "phoneNumber": "abc"
+        "name": "Hoang Le",
+        "email": "test@gmail.com",
+        "password": "123456",
+        "phoneNumber": "abc",
+        "birthday": "2002-08-15",
+        "gender": "Nam"
       },
       "expected": {
-        "success": false
+        "success": false,
+        "message": "Số điện thoại không hợp lệ"
       }
     },
 
-    "INVALID_BIRTHDAY": {
+    "EMPTY_FIELD": {
       "data": {
-        "birthday": "2035-01-01"
+        "name": "",
+        "email": "",
+        "password": "",
+        "phoneNumber": "",
+        "birthday": "",
+        "gender": ""
       },
       "expected": {
-        "success": false
-      }
-    },
-
-    "INVALID_GENDER": {
-      "data": {
-        "gender": "UNKNOWN"
-      },
-      "expected": {
-        "success": false
-      }
-    },
-
-    "EMPTY_USER": {
-      "data": {},
-      "expected": {
-        "success": false
+        "success": false,
+        "message": "Vui lòng không bỏ trống"
       }
     }
   }

@@ -1,8 +1,16 @@
 package framework.enums;
 
 public enum LoginType {
-    VALID_USER,
-    INVALID_EMAIL,
+
+    // VALID
+    VALID_CREDENTIALS,
+
+    // INVALID CREDENTIALS
+    INVALID_CREDENTIALS,
     INVALID_PASSWORD,
-    EMPTY_USER
+
+    // EMPTY / VALIDATION
+    INVALID_EMAIL_FORMAT,
+    EMPTY_FIELD,
+    EMPTY_PASSWORD
 }

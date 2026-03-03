@@ -36,8 +36,7 @@ public class ProfileTest extends BaseTest {
                 new ScreenshotUtil(driver, "TC20_", test);
 
         // 1. Login
-        LoginAction.loginForBooking(LoginType.VALID_USER);
-
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
         // 2. Search room
         Assert.assertTrue(RoomAction.searchRoom(screenshot));
 
