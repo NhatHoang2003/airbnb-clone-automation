@@ -26,4 +26,34 @@ public class RoomTest extends BaseTest {
 
         Assert.assertTrue(actual, "Search room failed!");
     }
+
+    @Test(description = "Verify user can search room with date successfully")
+    public void verifySearchRoomWithDate() {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "TC_SearchRoomDate_", test);
+
+        boolean actual =
+                RoomAction.searchRoomWithDate(screenshot, "10", "15");
+
+        Assert.assertTrue(actual, "Search room with date failed!");
+    }
+
+    @Test(description = "Verify user can search room with guest successfully")
+    public void verifySearchRoomWithGuest() {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "TC_SearchRoomGuest_", test);
+
+        boolean actual =
+                RoomAction.searchRoomByGuest(screenshot, 2);
+
+        Assert.assertTrue(actual, "Search room with guest failed!");
+    }
 }

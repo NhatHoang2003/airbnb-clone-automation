@@ -56,4 +56,26 @@ public class RoomPage extends BasePage {
 
         return new RoomDetailPage(driver, screenshotUtil);
     }
+
+    public RoomPage scrollToRoomList() {
+
+        WebElement roomList =
+                wait.waitFor(RoomLocator.ROOM_LINKS, WaitType.VISIBLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", roomList);
+
+        return this;
+    }
+
+    public RoomPage highlightRoomList() {
+
+        WebElement roomList =
+                wait.waitFor(RoomLocator.ROOM_LINKS, WaitType.VISIBLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].style.border='3px solid red'", roomList);
+
+        return this;
+    }
 }

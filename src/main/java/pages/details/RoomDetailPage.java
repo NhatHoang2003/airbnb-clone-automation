@@ -225,4 +225,56 @@ public class RoomDetailPage extends BasePage {
 
         return isBookingSuccess();
     }
+
+    public int getPricePerDay() {
+
+        WebElement priceElement =
+                waitUtil.waitFor(RoomDetailLocator.PRICE_PER_NIGHT, WaitType.VISIBLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", priceElement);
+
+        highlight(priceElement);
+        slowDown();
+
+        screenshotUtil.capture("Price per night");
+
+        String priceText = priceElement.getText();
+        priceText = priceText.replaceAll("[^0-9]", "");
+
+        return Integer.parseInt(priceText);
+    }
+
+    public int getDisplayedTotalPrice() {
+
+        WebElement totalElement =
+                waitUtil.waitFor(RoomDetailLocator.TOTAL_PRICE, WaitType.VISIBLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", totalElement);
+
+        highlight(totalElement);
+        slowDown();
+
+        String totalText = totalElement.getText();
+        screenshotUtil.capture("Total Price");
+
+        totalText = totalText.replaceAll("[^0-9]", "");
+
+        return Integer.parseInt(totalText);
+    }
+
+    public int calculateExpectedTotal(int pricePerDay,
+                                      String checkInDay,
+                                      String checkOutDay) {
+
+        int checkIn = Integer.parseInt(checkInDay);
+        int checkOut = Integer.parseInt(checkOutDay);
+
+        int numberOfNights = checkOut - checkIn;
+
+        int cleaningFee = 8;
+
+        return (pricePerDay * numberOfNights) + cleaningFee;
+    }
 }

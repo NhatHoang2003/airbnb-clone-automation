@@ -3,7 +3,11 @@
 
     "VALID_CREDENTIALS": {
       "data": {
+<<<<<<< HEAD
         "email": "hoangle8122003@gmail.com",
+=======
+        "email": "T09N04@gmail.com",
+>>>>>>> 7601c0c349e64882890ad461ed88a6921490da77
         "password": "123456"
       },
       "expected": {

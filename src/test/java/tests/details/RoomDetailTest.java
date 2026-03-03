@@ -51,6 +51,52 @@ public class RoomDetailTest extends BaseTest {
         Assert.assertTrue(result,"Booking was not successful");
     }
 
+    @Test(description = "TC17 - Validate total price calculation including cleaning fee")
+    public void verifyPriceCalculation() {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "TC17_", test);
+
+        LoginAction.loginForBooking(LoginType.VALID_USER);
+
+        Assert.assertTrue(RoomAction.searchRoom(screenshot),
+                "Search room failed");
+
+        RoomDetailPage detailPage =
+                RoomAction.openFirstRoom(screenshot);
+
+        Assert.assertNotNull(detailPage,
+                "Room detail page not opened");
+
+        String checkInDay = "19";
+        String checkOutDay = "22";
+
+        detailPage
+                .selectCheckInDate()
+                .clickNextMonthButton()
+                .selectDate(checkInDay)
+                .selectDate(checkOutDay)
+                .closePopup();
+
+        int pricePerDay = detailPage.getPricePerDay();
+        int totalDisplayed = detailPage.getDisplayedTotalPrice();
+
+        int expectedTotal =
+                detailPage.calculateExpectedTotal(
+                        pricePerDay,
+                        checkInDay,
+                        checkOutDay
+                );
+
+        screenshot.capture("TC17_Final_Result");
+
+        Assert.assertEquals(totalDisplayed, expectedTotal,
+                "Total price calculation incorrect!");
+    }
+
     @Test(description = "TC18 - Booking fails when not logged in")
 //     TC-18: Đặt phòng thất bại - Chưa đăng nhập
     public void verifyBookingWithoutLogin() {
