@@ -60,7 +60,7 @@ public class RoomDetailTest extends BaseTest {
         ScreenshotUtil screenshot =
                 new ScreenshotUtil(driver, "TC17_", test);
 
-        LoginAction.loginForBooking(LoginType.VALID_USER);
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
 
         Assert.assertTrue(RoomAction.searchRoom(screenshot),
                 "Search room failed");

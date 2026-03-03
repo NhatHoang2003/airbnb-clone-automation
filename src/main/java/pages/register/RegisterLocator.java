@@ -17,13 +17,7 @@ public class RegisterLocator {
     public static final By REGISTER_BUTTON = By.xpath("//button[@type='submit']");
 
     public static final By SUCCESS_MESSAGE = By.xpath("//span[text()='Đăng ký thành công']");
-    public static final By EMAIL_EXIST = By.xpath("//span[text()='Email đã tồn tại !']");
+    public static final By EMAIL_EXIST_MESSAGE = By.xpath("//span[text()='Email đã tồn tại !']");
 
-    public static final By NAME_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
-    public static final By EMAIL_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
-    public static final By PASSWORD_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
-    public static final By PHONE_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
-    public static final By BIRTHDAY_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
-
-    public static final By ALL_ERROR_MESSAGE = By.cssSelector(".ant-form-item-explain-error");
+    public static final By ALL_ERROR_MESSAGE = By.xpath("//div[@class='ant-form-item-explain-error']");
 }

@@ -94,6 +94,17 @@ public class RegisterPopup extends BasePage {
 //        return this;
 //    }
 
+
+    public RegisterPopup clickRegisterButton (){
+        actions.clicksBy(
+                RegisterLocator.REGISTER_BUTTON,
+                "Click Register Button"
+        );
+
+        return this;
+    }
+
+
     public String getSuccessMessage() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -119,41 +130,86 @@ public class RegisterPopup extends BasePage {
 
             WebElement message = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(
-                            RegisterLocator.EMAIL_EXIST
+                            RegisterLocator.EMAIL_EXIST_MESSAGE
                     )
             );
 
             highlight(message);
 
-            return message.getText().trim();
+            return message.getText();
 
         } catch (TimeoutException e) {
             return "";
         }
     }
 
+//    public String getErrorEmailExist() {
+//        try {
+//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//
+//            WebElement message = wait.until(
+//                    ExpectedConditions.visibilityOfElementLocated(
+//                            RegisterLocator.EMAIL_ERROR_MESSAGE
+//                    )
+//            );
+//
+//            highlight(message);
+//
+//            return message.getText().trim();
+//
+//        } catch (TimeoutException e) {
+//            return "";
+//        }
+//    }
+//
+//    public String getErrorPhoneNumber() {
+//        try {
+//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//
+//            WebElement message = wait.until(
+//                    ExpectedConditions.visibilityOfElementLocated(
+//                            RegisterLocator.PHONE_ERROR_MESSAGE
+//                    )
+//            );
+//
+//            highlight(message);
+//
+//            return message.getText().trim();
+//
+//        } catch (TimeoutException e) {
+//            return "";
+//        }
+//    }
 
-    public List<String> getAllErrorMessages() {
-        List<WebElement> errors = driver.findElements(RegisterLocator.ALL_ERROR_MESSAGE);
+    public List<String> getAllMessages() {
 
-        List<String> errorMessages = new ArrayList<>();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
-        for (WebElement error : errors) {
-            errorMessages.add(error.getText().trim());
-        }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+                RegisterLocator.ALL_ERROR_MESSAGE
+        ));
 
-        return errorMessages;
-    }
-
-
-
-    public RegisterPopup clickRegisterButton (){
-        actions.clicksBy(
-                RegisterLocator.REGISTER_BUTTON,
-                "Click Register Button"
+        List<WebElement> elements = driver.findElements(
+                RegisterLocator.ALL_ERROR_MESSAGE
         );
 
-        return this;
+        List<String> messages = new ArrayList<>();
+
+        for (WebElement el : elements) {
+
+            String text = el.getText().trim();
+
+            if (!text.isEmpty()) {
+
+                highlight(el);
+
+                messages.add(text);
+            }
+        }
+
+        System.out.println("Validation messages: " + messages);
+
+        return messages;
     }
 
     public void waitUntilLoginPopupClosed() {

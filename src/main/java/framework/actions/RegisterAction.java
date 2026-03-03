@@ -10,9 +10,14 @@ import framework.enums.RegisterType;
 import framework.readers.TestDataManager;
 import framework.reports.ExtentManager;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import pages.home.HomePage;
 import pages.register.RegisterPopup;
 import utils.ScreenshotUtil;
+
+import java.util.List;
+
+import static framework.enums.LoginType.EMPTY_FIELD;
 
 public class RegisterAction {
 
@@ -82,6 +87,29 @@ public class RegisterAction {
                 .enterBirthdayField(registerData.getBirthday())
 //                .enterGenderField()
                 .clickRegisterButton();
+
+
+        String message = "";
+
+        switch (registerType) {
+
+            case INVALID_CREDENTIALS:
+                message = register.getFailureMessage();
+                break;
+
+            case INVALID_EMAIL_FORMAT:
+            case INVALID_PHONE:
+            case EMPTY_FIELD:
+                List<String> errors = register.getAllMessages();
+
+                if (!errors.isEmpty()) {
+                    message = errors.get(0);
+                }
+                break;
+        }
+
+        RegisterResult actual = new RegisterResult(message);
+        testCase.setActualRegister(actual);
 
         return testCase;
     }

@@ -62,7 +62,7 @@
     "VALID_CREDENTIALS": {
       "data": {
         "name": "Hoang Le",
-        "email": "newuser05@gmail.com",
+        "email": "newuser08@gmail.com",
         "password": "123456",
         "phoneNumber": "0909123456",
         "birthday": "08/12/2003",
@@ -77,14 +77,14 @@
     "INVALID_CREDENTIALS": {
       "data": {
         "name": "Hoang Le",
-        "email": "newuser@gmail.com",
+        "email": "newuser06@gmail.com",
         "password": "123456",
         "phoneNumber": "0909123456",
-        "birthday": "2002-08-15",
+        "birthday": "08/12/2003",
         "gender": "Nam"
       },
       "expected": {
-        "success": true,
+        "success": false,
         "message": "Email đã tồn tại !"
       }
     },
@@ -95,7 +95,7 @@
         "email": "testgmail.com",
         "password": "123456",
         "phoneNumber": "0909123456",
-        "birthday": "2002-08-15",
+        "birthday": "08/12/2003",
         "gender": "Nam"
       },
       "expected": {
@@ -110,7 +110,7 @@
         "email": "test@gmail.com",
         "password": "123456",
         "phoneNumber": "abc",
-        "birthday": "2002-08-15",
+        "birthday": "08/12/2003",
         "gender": "Nam"
       },
       "expected": {

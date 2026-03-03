@@ -26,4 +26,32 @@ public class RegisterTest extends BaseTest {
         RegisterAssertion.assertRegister(testCaseData);
     }
 
+
+    @Test(
+            dataProvider = "invalidCredentials",
+            dataProviderClass = RegisterDataProvider.class
+    )
+    public void testRegisterWithInvalidCredentials (RegisterType registerType){
+
+        TestCaseData<RegisterData> testCaseData =
+                RegisterAction.registerInvalid(registerType);
+
+        RegisterAssertion.assertRegister(testCaseData);
+    }
+
+    @Test(
+            dataProvider = "emptyFields",
+            dataProviderClass = RegisterDataProvider.class
+    )
+    public void testRegisterWithEmptyFields(RegisterType registerType){
+
+        TestCaseData<RegisterData> testCaseData =
+                RegisterAction.registerInvalid(registerType);
+
+        RegisterAssertion.assertRegister(testCaseData);
+    }
+
+
+
+
 }

@@ -6,10 +6,10 @@ public enum RegisterType {
     VALID_CREDENTIALS,
 
 //    === invalid ====
-    INVALID_CREDENTAILS,
+    INVALID_CREDENTIALS,
     INVALID_EMAIL_FORMAT,
     INVALID_PHONE,
 
 //    === empty ===
-    EMPTY_USER
+    EMPTY_FIELD
 }

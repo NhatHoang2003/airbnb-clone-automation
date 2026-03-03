@@ -9,12 +9,9 @@ import framework.data.model.TestCaseData;
 import framework.enums.LoginType;
 import framework.driver.DriverManager;
 import framework.listeners.ExtentListener;
-<<<<<<< HEAD
-=======
 import framework.reports.ExtentManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
->>>>>>> 7601c0c349e64882890ad461ed88a6921490da77
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.details.RoomDetailPage;
@@ -38,7 +35,6 @@ public class LoginTest extends BaseTest {
         LoginAssertion.assertLogin(testCase);
     }
 
-<<<<<<< HEAD
     @Test(dataProvider = "invalidCredentials",
             dataProviderClass = LoginDataProvider.class)
     public void testLoginWithInvalidCredentials(LoginType loginType) {
@@ -59,7 +55,7 @@ public class LoginTest extends BaseTest {
 
         LoginAssertion.assertLogin(testCase);
     }
-=======
+
     @Test(description = "TC22 - Open dashboard after successful login")
     public void testOpenDashboardAfterLoginSuccess() {
 
@@ -70,7 +66,7 @@ public class LoginTest extends BaseTest {
                 new ScreenshotUtil(driver, "TC22_", test);
 
         // 1. Login with valid user
-        LoginAction.loginForBooking(LoginType.VALID_USER);
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
 
         // 2. Open dashboard (profile) from header
         RoomDetailPage header = new RoomDetailPage(driver, screenshot);
@@ -82,6 +78,4 @@ public class LoginTest extends BaseTest {
         profilePage.openEditProfile();
         Assert.assertTrue(profilePage.isProfileInformationDisplayed());
     }
-
->>>>>>> 7601c0c349e64882890ad461ed88a6921490da77
 }

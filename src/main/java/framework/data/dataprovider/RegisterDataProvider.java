@@ -14,16 +14,16 @@ public class RegisterDataProvider {
     @DataProvider(name = "invalidCredentials")
     public static Object[][] invalidCredentials() {
         return new Object[][] {
-                { RegisterType.INVALID_CREDENTAILS },
+                { RegisterType.INVALID_CREDENTIALS },
                 { RegisterType.INVALID_EMAIL_FORMAT },
                 { RegisterType.INVALID_PHONE }
         };
     }
 
-    @DataProvider(name = "emptyField")
-    public static Object[][] emptyField() {
+    @DataProvider(name = "emptyFields")
+    public static Object[][] emptyFields() {
         return new Object[][]{
-                { RegisterType.EMPTY_USER }
+                { RegisterType.EMPTY_FIELD }
         };
     }
 }

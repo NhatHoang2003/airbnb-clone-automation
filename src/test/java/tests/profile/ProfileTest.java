@@ -54,7 +54,7 @@ public class ProfileTest extends BaseTest {
                 new ScreenshotUtil(driver, "TC21_", test);
 
         // 1. Login
-        LoginAction.loginForBooking(LoginType.VALID_USER);
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
 
         // 2. Search room
         Assert.assertTrue(RoomAction.searchRoom(screenshot));
@@ -81,7 +81,7 @@ public class ProfileTest extends BaseTest {
                 new ScreenshotUtil(driver, "TC22_", test);
 
         // 1. Login with valid user
-        LoginAction.loginForBooking(LoginType.VALID_USER);
+        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
 
         // 2. Open dashboard (profile) from header
         RoomDetailPage header = new RoomDetailPage(driver, screenshot);
