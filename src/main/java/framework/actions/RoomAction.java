@@ -35,7 +35,7 @@ public class RoomAction {
         RoomPage roomPage = new RoomPage(driver, screenshot);
 
         if (!roomPage.isRoomListDisplayed()) {
-            return null;
+            return null;git status
         }
 
         return roomPage.clickFirstRoom();
