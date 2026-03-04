@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.rooms.RoomLocator;
 import pages.rooms.RoomPage;
+import pages.details.RoomDetailLocator;
 import utils.ConfigReader;
 import utils.ScreenshotUtil;
 
@@ -34,7 +35,7 @@ public class HomePage extends BasePage {
 
     public HomePage clickProfileIcon() {
         wait.waitForLoadingDisappear(HomeLocator.LOADING_OVERLAY);
-        actions.clicksBy(PROFILE_ICON, "Click profile icon");
+        actions.clicksBy(RoomDetailLocator.PROFILE_ICON, "Click profile icon");
         return this;
     }
 

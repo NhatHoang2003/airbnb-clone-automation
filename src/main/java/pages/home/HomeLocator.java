@@ -7,7 +7,7 @@ public class HomeLocator {
     private HomeLocator() {
     }
 
-    public static final By PROFILE_ICON = By.cssSelector(".rounded-full");
+    public static final By UPLOADAVT_BUTTON = By.xpath("//button[text()='Cập nhật ảnh']"); //button[text()='Cập nhật ảnh']
     public static final By LOGIN_MENU_OPTION = By.xpath("//button[text()='Đăng nhập']");
     public static final By REGISTRATION_MENU_OPTION = By.xpath("//button[text()='Đăng ký']");
     public static final By SEARCH_BUTTON = By.xpath("//span[@aria-label='search']/ancestor::div[1]");
