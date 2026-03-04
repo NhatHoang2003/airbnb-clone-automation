@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="tests.details.RoomDetailTest">
+        <methods>
+          <include name="verifyPriceCalculation"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="verifyBookingWithoutLogin"/>
+          <include name="setupSuite"/>
+          <include name="verifyBookingSuccess"/>
+        </methods>
+      </class> <!-- tests.details.RoomDetailTest -->
+      <class name="tests.rooms.RoomTest">
+        <methods>
+          <include name="verifySearchRoom"/>
+          <include name="tearDown"/>
+          <include name="verifyFilterByPriceRange"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="setupSuite"/>
+          <include name="verifySearchRoomWithDate"/>
+          <include name="verifySearchRoomWithGuest"/>
+          <include name="verifySwiperNextWorking"/>
+        </methods>
+      </class> <!-- tests.rooms.RoomTest -->
+      <class name="tests.register.RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testRegisterWithEmptyFields"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="testRegisterWithInvalidCredentials"/>
+          <include name="testRigisterWithValidCredentials"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- tests.register.RegisterTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="loginByApiAndVerifyDashboard"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.profile.ProfileTest">
+        <methods>
+          <include name="TC21_ViewProfileInformation"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="setupSuite"/>
+          <include name="TC22_UpdatePhoneNumber"/>
+          <include name="TC20_ViewBookingHistory"/>
+        </methods>
+      </class> <!-- tests.profile.ProfileTest -->
+      <class name="tests.base.BaseTest">
+        <methods>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.base.BaseTest -->
+      <class name="tests.login.LoginTest">
+        <methods>
+          <include name="testLoginWithValidCredentials"/>
+          <include name="tearDown"/>
+          <include name="testLoginWithEmptyField"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="testLoginWithInvalidCredentials"/>
+          <include name="testOpenDashboardAfterLoginSuccess"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- tests.login.LoginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
