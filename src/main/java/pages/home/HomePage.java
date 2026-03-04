@@ -48,6 +48,20 @@ public class HomePage extends BasePage {
         return this;
     }
 
+    public HomePage clickLocationBox() {
+        wait.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);
+        actions.clicksBy(HomeLocator.LOCATION_BOX, "Click location box");
+        return this;
+    }
+
+    public HomePage selectLocation(String locationName) {
+        actions.clicksBy(
+                HomeLocator.locationItem(locationName),
+                "Select location: " + locationName
+        );
+        return this;
+    }
+
     public RoomPage clickSearchButton() {
         waitUtil.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);
 
@@ -65,9 +79,21 @@ public class HomePage extends BasePage {
     }
 
     public HomePage clickAddGuest() {
+
         wait.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);
 
-        actions.clicksBy(DROPDOWN_ADD_GUEST, "Click 'Thêm khách'");
+        WebElement element = waitUtil.waitFor(
+                HomeLocator.DROPDOWN_ADD_GUEST,
+                WaitType.VISIBLE
+        );
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+
+        slowDown();
+
+        element.click();
+
         return this;
     }
 
@@ -113,7 +139,6 @@ public class HomePage extends BasePage {
         try {
             wait.waitFor(HomeLocator.LOADING_OVERLAY, WaitType.INVISIBLE);
         } catch (Exception ignored) {
-            // nếu không có overlay thì bỏ qua
         }
     }
 }

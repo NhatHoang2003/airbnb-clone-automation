@@ -15,6 +15,8 @@ import utils.ScreenshotUtil;
 import java.time.Duration;
 import java.util.List;
 
+import static utils.HighlightUtil.highlightElement;
+
 public class RoomPage extends BasePage {
 
     private final WaitUtil wait;
@@ -57,6 +59,8 @@ public class RoomPage extends BasePage {
         return new RoomDetailPage(driver, screenshotUtil);
     }
 
+
+
     public RoomPage scrollToRoomList() {
 
         WebElement roomList =
@@ -68,14 +72,88 @@ public class RoomPage extends BasePage {
         return this;
     }
 
-    public RoomPage highlightRoomList() {
+    public boolean isPriceListDisplayed() {
 
-        WebElement roomList =
-                wait.waitFor(RoomLocator.ROOM_LINKS, WaitType.VISIBLE);
+        wait.waitFor(RoomLocator.PRICE_LIST, WaitType.VISIBLE);
 
-        ((JavascriptExecutor) driver)
-                .executeScript("arguments[0].style.border='3px solid red'", roomList);
+        List<WebElement> priceList =
+                driver.findElements(RoomLocator.PRICE_LIST);
+
+        if (priceList.isEmpty()) {
+            return false;
+        }
+
+        for (WebElement priceElement : priceList) {
+
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].scrollIntoView({block:'center'});", priceElement);
+
+            slowDown();
+
+            highlight(priceElement);
+        }
+
+        return true;
+    }
+
+    public RoomPage clickNextImage() {
+
+        WebElement nextBtn =
+                wait.waitFor(RoomLocator.SWIPER_NEXT_BUTTON, WaitType.CLICKABLE);
+
+        highlight(nextBtn);
+        nextBtn.click();
+
 
         return this;
+    }
+
+    public RoomPage clickPrevImage() {
+
+        WebElement prevBtn =
+                wait.waitFor(RoomLocator.SWIPER_PREV_BUTTON, WaitType.CLICKABLE);
+
+        highlight(prevBtn);
+        prevBtn.click();
+
+        return this;
+    }
+
+    public boolean isSwiperNextWorking() {
+
+        WebElement activeBefore =
+                wait.waitFor(RoomLocator.ACTIVE_SLIDE_IMAGE, WaitType.VISIBLE);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", activeBefore);
+
+        highlight(activeBefore);
+
+        String beforeSrc = activeBefore.getAttribute("src");
+
+        WebElement nextBtn =
+                wait.waitFor(RoomLocator.SWIPER_NEXT_BUTTON, WaitType.CLICKABLE);
+
+        highlight(nextBtn);
+        nextBtn.click();
+
+        WebDriverWait customWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        boolean changed = customWait.until(driver -> {
+
+            WebElement activeAfter =
+                    driver.findElement(RoomLocator.ACTIVE_SLIDE_IMAGE);
+
+            String afterSrc = activeAfter.getAttribute("src");
+
+            return !afterSrc.equals(beforeSrc);
+        });
+
+        WebElement activeAfter =
+                driver.findElement(RoomLocator.ACTIVE_SLIDE_IMAGE);
+
+        highlight(activeAfter);
+
+        return changed;
     }
 }

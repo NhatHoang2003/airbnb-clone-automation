@@ -277,4 +277,31 @@ public class RoomDetailPage extends BasePage {
 
         return (pricePerDay * numberOfNights) + cleaningFee;
     }
+
+    public boolean isRoomInformationDisplayed() {
+
+        boolean result = true;
+
+        result &= isElementDisplayed(RoomDetailLocator.ROOM_TITLE);
+        result &= isElementDisplayed(RoomDetailLocator.HOST_NAME);
+        result &= isElementDisplayed(RoomDetailLocator.HOST_AVATAR);
+        result &= isElementDisplayed(RoomDetailLocator.ROOM_BASIC_INFO);
+        result &= isElementDisplayed(RoomDetailLocator.DESCRIPTION);
+        result &= isElementDisplayed(RoomDetailLocator.TRANSLATE_BUTTON);
+
+        return result;
+    }
+
+    public RoomDetailPage clickFirstRoomInGrid() {
+
+        WebElement room =
+                waitUtil.waitFor(RoomLocator.ROOM_GRID_01, WaitType.CLICKABLE);
+
+        highlight(room);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", room);
+
+        return new RoomDetailPage(driver, screenshotUtil);
+    }
 }

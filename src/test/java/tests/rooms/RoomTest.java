@@ -56,4 +56,41 @@ public class RoomTest extends BaseTest {
 
         Assert.assertTrue(actual, "Search room with guest failed!");
     }
+
+    @Test(description = "Verify that the system correctly filters products by price range only.")
+    public void verifyFilterByPriceRange() {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "TC_FilterPrice_", test);
+
+        RoomAction.filterByPriceRange(
+                screenshot,
+                "Hồ Chí Minh",
+                "10",
+                "15",
+                0
+        );
+
+    }
+
+    @Test(description = "Verify that the system correctly filters products by price range only.")
+    public void verifySwiperNextWorking() {
+
+        WebDriver driver = DriverManager.getDriver();
+        ExtentTest test = ExtentManager.getTest();
+
+        ScreenshotUtil screenshot =
+                new ScreenshotUtil(driver, "TC_FilterPrice_", test);
+
+        RoomAction.swiperNextWorking(
+                screenshot,
+                "Hồ Chí Minh",
+                "10",
+                "15",
+                0
+        );
+    }
 }

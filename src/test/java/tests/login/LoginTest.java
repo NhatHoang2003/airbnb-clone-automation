@@ -24,6 +24,7 @@ import utils.ScreenshotUtil;
 public class LoginTest extends BaseTest {
 
     @Test(
+            description = "TC01: Đăng ký thành công với thông tin hợp lệ",
             dataProvider = "validCredentials",
             dataProviderClass = LoginDataProvider.class
     )
@@ -35,7 +36,8 @@ public class LoginTest extends BaseTest {
         LoginAssertion.assertLogin(testCase);
     }
 
-    @Test(dataProvider = "invalidCredentials",
+    @Test(
+            dataProvider = "invalidCredentials",
             dataProviderClass = LoginDataProvider.class)
     public void testLoginWithInvalidCredentials(LoginType loginType) {
 

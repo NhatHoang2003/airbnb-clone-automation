@@ -52,4 +52,14 @@ public class BasePage {
             e.printStackTrace();
         }
     }
+
+    public boolean isElementDisplayed(By locator) {
+        try {
+            WebElement element =
+                    waitUtil.waitFor(locator, WaitType.VISIBLE);
+            return element.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

@@ -22,4 +22,22 @@ public class RoomDetailLocator {
     public static final By PROFILE_ICON = By.cssSelector(".rounded-full");
     public static final By PRICE_PER_NIGHT = By.xpath("//div[span[contains(@class,'font-bold') and contains(text(),'$')]]/span");
     public static final By TOTAL_PRICE = By.xpath("(//p[contains(@class,'font-mono') and contains(@class,'font-bold')])[last()]");
+
+    public static final By ROOM_TITLE =
+            By.cssSelector("h3.text-xl.font-bold");
+
+    public static final By HOST_NAME =
+            By.cssSelector("h3 span.uppercase");
+
+    public static final By HOST_AVATAR =
+            By.cssSelector("img.rounded-full");
+
+    public static final By ROOM_BASIC_INFO =
+            By.xpath("//p[contains(text(),'Khách')]");
+
+    public static final By DESCRIPTION =
+            By.xpath("//p[contains(@class,'text-justify')]");
+
+    public static final By TRANSLATE_BUTTON =
+            By.xpath("//button[contains(.,'Dịch sang tiếng Anh')]");
 }

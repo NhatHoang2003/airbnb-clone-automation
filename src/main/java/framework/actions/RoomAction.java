@@ -80,9 +80,89 @@ public class RoomAction {
         RoomPage roomPage = homePage.clickSearchButton();
 
         roomPage
-                .scrollToRoomList()
-                .highlightRoomList();
+                .scrollToRoomList();
 
         return roomPage.isRoomListDisplayed();
     }
+
+    public static boolean searchRoomByLocation(
+            ScreenshotUtil screenshot,
+            String locationName) {
+
+        WebDriver driver = DriverManager.getDriver();
+        HomePage homePage = new HomePage(driver, screenshot);
+
+        RoomPage roomPage = homePage
+                .open()
+                .clickLocationBox()
+                .selectLocation(locationName)
+                .clickSearchButton();
+
+        return roomPage.isRoomListDisplayed();
+    }
+
+    public static boolean filterByPriceRange(
+            ScreenshotUtil screenshot,
+            String locationName,
+            String startDay,
+            String endDay,
+            int guestCount) {
+
+        WebDriver driver = DriverManager.getDriver();
+        HomePage homePage = new HomePage(driver, screenshot);
+
+        RoomPage roomPage = homePage
+                .open()
+                .clickLocationBox()
+                .selectLocation(locationName)
+                .openDatePicker()
+                .goToNextMonth()
+                .selectDay(startDay)
+                .selectDay(endDay)
+                .clickAddGuest()
+                .increaseGuest(guestCount)
+                .clickSearchButton();
+
+        roomPage.scrollToRoomList();
+
+        return roomPage.isPriceListDisplayed();
+    }
+
+
+    public static boolean swiperNextWorking(
+            ScreenshotUtil screenshot,
+            String locationName,
+            String startDay,
+            String endDay,
+            int guestCount) {
+
+        WebDriver driver = DriverManager.getDriver();
+        HomePage homePage = new HomePage(driver, screenshot);
+
+        RoomPage roomPage = homePage
+                .open()
+                .clickLocationBox()
+                .selectLocation(locationName)
+
+
+                .openDatePicker()
+                .goToNextMonth()
+                .selectDay(startDay)
+                .selectDay(endDay)
+
+                .clickAddGuest()
+                .increaseGuest(guestCount)
+
+                .clickSearchButton();
+
+        roomPage.scrollToRoomList();
+
+        roomPage.clickNextImage()
+                .clickPrevImage();
+
+        return roomPage.isRoomListDisplayed();
+    }
+
+
+
 }
