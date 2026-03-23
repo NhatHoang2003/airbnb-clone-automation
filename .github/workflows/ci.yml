@@ -24,5 +24,11 @@ jobs:
       - name: Build (skip tests)
         run: mvn -B clean install -DskipTests
 
-      - name: Run smoke test (basic)
-        run: mvn -B test -Dtestng.suiteXmlFile=smoke-testng.xml
+      - name: Install Chrome (Chromium) & Xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends xvfb chromium chromium-chromedriver
+          sudo apt-get install -y libnss3 libxss1 libasound2 libatk-bridge2.0-0 libgtk-3-0 libgbm1 libxcomposite1 libxdamage1 libxrandr2 libpango-1.0-0 libpangocairo-1.0-0
+
+      - name: Run TestNG suite
+        run: xvfb-run -a mvn -B test -Dtestng.suiteXmlFile=testng.xml
