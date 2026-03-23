@@ -1,0 +1,29 @@
+## Maven / Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+## Test artifacts (Selenium/TestNG/ExtentReports)
+test-output/
+reports/
+*.log
+*.log.*
+
+## IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+## Eclipse
+.classpath
+.project
+.settings/
+
+## VS Code
+.vscode/
+
+## Operating system files
+.DS_Store
+Thumbs.db
