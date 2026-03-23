@@ -12,6 +12,8 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Suite để TestNG chạy trên CI (override bằng -Dtestng.suiteXmlFile=...). -->
+        <testng.suiteXmlFile>testng.xml</testng.suiteXmlFile>
     </properties>
 
 
@@ -68,7 +70,7 @@
                 <configuration>
                     <!-- Chạy theo suite định nghĩa trong testng.xml để tránh chạy test không mong muốn -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${testng.suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

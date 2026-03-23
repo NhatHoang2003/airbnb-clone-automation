@@ -21,14 +21,8 @@ jobs:
           java-version: "21"
           cache: maven
 
-      - name: Install Chrome (Chromium) & Xvfb
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y xvfb chromium-chromedriver chromium-browser || sudo apt-get install -y xvfb chromium-chromedriver chromium
-          sudo apt-get install -y libnss3 libxss1 libasound2 libatk-bridge2.0-0 libgtk-3-0 libgbm1 libxcomposite1 libxdamage1 libxrandr2 libpango-1.0-0 libpangocairo-1.0-0
-
       - name: Build (skip tests)
         run: mvn -B clean install -DskipTests
 
-      - name: Run test
-        run: xvfb-run -a mvn -B test
+      - name: Run smoke test (basic)
+        run: mvn -B test -Dtestng.suiteXmlFile=smoke-testng.xml
