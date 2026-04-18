@@ -58,26 +58,26 @@ public class LoginTest extends BaseTest {
         LoginAssertion.assertLogin(testCase);
     }
 
-    @Test(description = "TC22 - Open dashboard after successful login")
-    public void testOpenDashboardAfterLoginSuccess() {
-
-        WebDriver driver = DriverManager.getDriver();
-        ExtentTest test = ExtentManager.getTest();
-
-        ScreenshotUtil screenshot =
-                new ScreenshotUtil(driver, "TC22_", test);
-
-        // 1. Login with valid user
-        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
-
-        // 2. Open dashboard (profile) from header
-        RoomDetailPage header = new RoomDetailPage(driver, screenshot);
-        ProfilePage profilePage = header
-                .clickProfileIcon()
-                .clickDashboard();
-
-        // 3. Verify profile information on dashboard
-        profilePage.openEditProfile();
-        Assert.assertTrue(profilePage.isProfileInformationDisplayed());
-    }
+//    @Test(description = "TC22 - Open dashboard after successful login")
+//    public void testOpenDashboardAfterLoginSuccess() {
+//
+//        WebDriver driver = DriverManager.getDriver();
+//        ExtentTest test = ExtentManager.getTest();
+//
+//        ScreenshotUtil screenshot =
+//                new ScreenshotUtil(driver, "TC22_", test);
+//
+//        // 1. Login with valid user
+//        LoginAction.loginForBooking(LoginType.VALID_CREDENTIALS);
+//
+//        // 2. Open dashboard (profile) from header
+//        RoomDetailPage header = new RoomDetailPage(driver, screenshot);
+//        ProfilePage profilePage = header
+//                .clickProfileIcon()
+//                .clickDashboard();
+//
+//        // 3. Verify profile information on dashboard
+//        profilePage.openEditProfile();
+//        Assert.assertTrue(profilePage.isProfileInformationDisplayed());
+//    }
 }

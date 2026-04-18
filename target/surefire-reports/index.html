@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 5 failed,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.profile.ProfileTest" class="method navigator-link" hash-for-method="TC21_ViewProfileInformation">TC21_ViewProfileInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.profile.ProfileTest" class="method navigator-link" hash-for-method="TC23_UploadAvatar">TC23_UploadAvatar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginByApiAndVerifyDashboard">loginByApiAndVerifyDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testOpenDashboardAfterLoginSuccess">testOpenDashboardAfterLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.register.RegisterTest" class="method navigator-link" hash-for-method="testRigisterWithValidCredentials(VALID_CREDENTIALS)">testRigisterWithValidCredentials(VALID_CREDENTIALS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.profile.ProfileTest" class="method navigator-link" hash-for-method="TC20_ViewBookingHistory">TC20_ViewBookingHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.profile.ProfileTest" class="method navigator-link" hash-for-method="TC22_UpdatePhoneNumber">TC22_UpdatePhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testLoginWithEmptyField(EMPTY_FIELD)">testLoginWithEmptyField(EMPTY_FIELD)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testLoginWithEmptyField(EMPTY_PASSWORD)">testLoginWithEmptyField(EMPTY_PASSWORD)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials(INVALID_EMAIL_FORMAT)">testLoginWithInvalidCredentials(INVALID_EMAIL_FORMAT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidCredentials(INVALID_CREDENTIALS)">testLoginWithInvalidCredentials(INVALID_CREDENTIALS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.login.LoginTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials(VALID_CREDENTIALS)">testLoginWithValidCredentials(VALID_CREDENTIALS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.register.RegisterTest" class="method navigator-link" hash-for-method="testRegisterWithEmptyFields(EMPTY_FIELD)">testRegisterWithEmptyFields(EMPTY_FIELD)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.register.RegisterTest" class="method navigator-link" hash-for-method="testRegisterWithInvalidCredentials(INVALID_EMAIL_FORMAT)">testRegisterWithInvalidCredentials(INVALID_EMAIL_FORMAT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.register.RegisterTest" class="method navigator-link" hash-for-method="testRegisterWithInvalidCredentials(INVALID_CREDENTIALS)">testRegisterWithInvalidCredentials(INVALID_CREDENTIALS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.register.RegisterTest" class="method navigator-link" hash-for-method="testRegisterWithInvalidCredentials(INVALID_PHONE)">testRegisterWithInvalidCredentials(INVALID_PHONE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.details.RoomDetailTest" class="method navigator-link" hash-for-method="verifyBookingSuccess">verifyBookingSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.details.RoomDetailTest" class="method navigator-link" hash-for-method="verifyBookingWithoutLogin">verifyBookingWithoutLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.rooms.RoomTest" class="method navigator-link" hash-for-method="verifyFilterByPriceRange">verifyFilterByPriceRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.details.RoomDetailTest" class="method navigator-link" hash-for-method="verifyPriceCalculation">verifyPriceCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.rooms.RoomTest" class="method navigator-link" hash-for-method="verifySearchRoom">verifySearchRoom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.rooms.RoomTest" class="method navigator-link" hash-for-method="verifySearchRoomWithDate">verifySearchRoomWithDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.rooms.RoomTest" class="method navigator-link" hash-for-method="verifySearchRoomWithGuest">verifySearchRoomWithGuest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.rooms.RoomTest" class="method navigator-link" hash-for-method="verifySwiperNextWorking">verifySwiperNextWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.register.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRigisterWithValidCredentials(VALID_CREDENTIALS)">
+                  </a> <!-- testRigisterWithValidCredentials(VALID_CREDENTIALS) -->
+                  <span class="method-name">testRigisterWithValidCredentials</span>
+                  <span class="parameters">(VALID_CREDENTIALS)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Message mismatch expected [Đăng ký thành công] but found []
+	at framework.asserts.RegisterAssertion.assertRegister(RegisterAssertion.java:11)
+	at tests.register.RegisterTest.testRigisterWithValidCredentials(RegisterTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginByApiAndVerifyDashboard">
+                  </a> <!-- loginByApiAndVerifyDashboard -->
+                  <span class="method-name">loginByApiAndVerifyDashboard</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at utils.ApiHelper.loginAndGetToken(ApiHelper.java:23)
+	at tests.LoginTest.loginByApiAndVerifyDashboard(LoginTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.profile.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC21_ViewProfileInformation">
+                  </a> <!-- TC21_ViewProfileInformation -->
+                  <span class="method-name">TC21_ViewProfileInformation</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.className: ant-image-mask (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57849/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5242599f79a66bd14c9ca944e9c1fb68
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at framework.wait.WaitUtil.waitForLoadingDisappear(WaitUtil.java:60)
+	at pages.details.RoomDetailPage.selectCheckInDate(RoomDetailPage.java:27)
+	at framework.actions.RoomDetailAction.bookRoomAndGoToProfile(RoomDetailAction.java:44)
+	at tests.profile.ProfileTest.TC21_ViewProfileInformation(ProfileTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC21 - View profile information fields)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC23_UploadAvatar">
+                  </a> <!-- TC23_UploadAvatar -->
+                  <span class="method-name">TC23_UploadAvatar</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\admin/Desktop/testing-09.png
+  (Session info: chrome=141.0.7390.55)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72f0c855d5110dea5578f229d94c6fb7, sendKeysToElement {id=f.B6B2D121B583A28FB61D61CF13C567C0.d.0DCAAB39070F8F3C0F42F56AA39808EE.e.50, value=[Ljava.lang.CharSequence;@2396dc4e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51797/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (72f0c855d5110dea5578f229d94c6fb7)] -&gt; xpath: //div[@role=&apos;dialog&apos;]//input[@type=&apos;file&apos;]]
+Session ID: 72f0c855d5110dea5578f229d94c6fb7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at pages.profile.ProfilePage.uploadAvatar(ProfilePage.java:57)
+	at tests.profile.ProfileTest.TC23_UploadAvatar(ProfileTest.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC23 - Upload avatar in profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenDashboardAfterLoginSuccess">
+                  </a> <!-- testOpenDashboardAfterLoginSuccess -->
+                  <span class="method-name">testOpenDashboardAfterLoginSuccess</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.55)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d83b1a050028490f1dfdba400c30c8e2, findElement {using=xpath, value=//input[@id=&apos;email&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61868}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61868/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d83b1a050028490f1dfdba400c30c8e2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at framework.wait.WaitUtil.waitFor(WaitUtil.java:28)
+	at pages.profile.ProfilePage.isProfileInformationDisplayed(ProfilePage.java:137)
+	at tests.login.LoginTest.testOpenDashboardAfterLoginSuccess(LoginTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC22 - Open dashboard after successful login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.details.RoomDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBookingSuccess">
+                  </a> <!-- verifyBookingSuccess -->
+                  <span class="method-name">verifyBookingSuccess</span>
+                  <em>
+(TC16 - Booking success)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBookingWithoutLogin">
+                  </a> <!-- verifyBookingWithoutLogin -->
+                  <span class="method-name">verifyBookingWithoutLogin</span>
+                  <em>
+(TC18 - Booking fails when not logged in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceCalculation">
+                  </a> <!-- verifyPriceCalculation -->
+                  <span class="method-name">verifyPriceCalculation</span>
+                  <em>
+(TC17 - Validate total price calculation including cleaning fee)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.rooms.RoomTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFilterByPriceRange">
+                  </a> <!-- verifyFilterByPriceRange -->
+                  <span class="method-name">verifyFilterByPriceRange</span>
+                  <em>
+(Verify that the system correctly filters products by price range only.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchRoom">
+                  </a> <!-- verifySearchRoom -->
+                  <span class="method-name">verifySearchRoom</span>
+                  <em>
+(Verify user can search room successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchRoomWithDate">
+                  </a> <!-- verifySearchRoomWithDate -->
+                  <span class="method-name">verifySearchRoomWithDate</span>
+                  <em>
+(Verify user can search room with date successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchRoomWithGuest">
+                  </a> <!-- verifySearchRoomWithGuest -->
+                  <span class="method-name">verifySearchRoomWithGuest</span>
+                  <em>
+(Verify user can search room with guest successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySwiperNextWorking">
+                  </a> <!-- verifySwiperNextWorking -->
+                  <span class="method-name">verifySwiperNextWorking</span>
+                  <em>
+(Verify that the system correctly filters products by price range only.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.register.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterWithEmptyFields(EMPTY_FIELD)">
+                  </a> <!-- testRegisterWithEmptyFields(EMPTY_FIELD) -->
+                  <span class="method-name">testRegisterWithEmptyFields</span>
+                  <span class="parameters">(EMPTY_FIELD)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterWithInvalidCredentials(INVALID_EMAIL_FORMAT)">
+                  </a> <!-- testRegisterWithInvalidCredentials(INVALID_EMAIL_FORMAT) -->
+                  <span class="method-name">testRegisterWithInvalidCredentials</span>
+                  <span class="parameters">(INVALID_EMAIL_FORMAT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterWithInvalidCredentials(INVALID_CREDENTIALS)">
+                  </a> <!-- testRegisterWithInvalidCredentials(INVALID_CREDENTIALS) -->
+                  <span class="method-name">testRegisterWithInvalidCredentials</span>
+                  <span class="parameters">(INVALID_CREDENTIALS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterWithInvalidCredentials(INVALID_PHONE)">
+                  </a> <!-- testRegisterWithInvalidCredentials(INVALID_PHONE) -->
+                  <span class="method-name">testRegisterWithInvalidCredentials</span>
+                  <span class="parameters">(INVALID_PHONE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.profile.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC20_ViewBookingHistory">
+                  </a> <!-- TC20_ViewBookingHistory -->
+                  <span class="method-name">TC20_ViewBookingHistory</span>
+                  <em>
+(TC20 - View booking history after successful booking)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC22_UpdatePhoneNumber">
+                  </a> <!-- TC22_UpdatePhoneNumber -->
+                  <span class="method-name">TC22_UpdatePhoneNumber</span>
+                  <em>
+(TC22 - Update phone number in profile)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.login.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyField(EMPTY_FIELD)">
+                  </a> <!-- testLoginWithEmptyField(EMPTY_FIELD) -->
+                  <span class="method-name">testLoginWithEmptyField</span>
+                  <span class="parameters">(EMPTY_FIELD)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithEmptyField(EMPTY_PASSWORD)">
+                  </a> <!-- testLoginWithEmptyField(EMPTY_PASSWORD) -->
+                  <span class="method-name">testLoginWithEmptyField</span>
+                  <span class="parameters">(EMPTY_PASSWORD)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(INVALID_EMAIL_FORMAT)">
+                  </a> <!-- testLoginWithInvalidCredentials(INVALID_EMAIL_FORMAT) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(INVALID_EMAIL_FORMAT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidCredentials(INVALID_CREDENTIALS)">
+                  </a> <!-- testLoginWithInvalidCredentials(INVALID_CREDENTIALS) -->
+                  <span class="method-name">testLoginWithInvalidCredentials</span>
+                  <span class="parameters">(INVALID_CREDENTIALS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials(VALID_CREDENTIALS)">
+                  </a> <!-- testLoginWithValidCredentials(VALID_CREDENTIALS) -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                  <span class="parameters">(VALID_CREDENTIALS)</span>
+                  <em>
+(TC01: Đăng ký thành công với thông tin hợp lệ)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.base.BaseTest&quot;/&gt;
+      &lt;class name=&quot;tests.details.RoomDetailTest&quot;/&gt;
+      &lt;class name=&quot;tests.login.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.profile.ProfileTest&quot;/&gt;
+      &lt;class name=&quot;tests.register.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;tests.rooms.RoomTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyFilterByPriceRange')
+data.setCell(0, 2, 'tests.rooms.RoomTest')
+data.setCell(0, 3, 36873);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyPriceCalculation')
+data.setCell(1, 2, 'tests.details.RoomDetailTest')
+data.setCell(1, 3, 24960);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC21_ViewProfileInformation')
+data.setCell(2, 2, 'tests.profile.ProfileTest')
+data.setCell(2, 3, 19199);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC20_ViewBookingHistory')
+data.setCell(3, 2, 'tests.profile.ProfileTest')
+data.setCell(3, 3, 17558);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testOpenDashboardAfterLoginSuccess')
+data.setCell(4, 2, 'tests.login.LoginTest')
+data.setCell(4, 3, 17230);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyBookingSuccess')
+data.setCell(5, 2, 'tests.details.RoomDetailTest')
+data.setCell(5, 3, 13774);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testRigisterWithValidCredentials')
+data.setCell(6, 2, 'tests.register.RegisterTest')
+data.setCell(6, 3, 11580);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC22_UpdatePhoneNumber')
+data.setCell(7, 2, 'tests.profile.ProfileTest')
+data.setCell(7, 3, 10781);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyBookingWithoutLogin')
+data.setCell(8, 2, 'tests.details.RoomDetailTest')
+data.setCell(8, 3, 10243);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRegisterWithInvalidCredentials')
+data.setCell(9, 2, 'tests.register.RegisterTest')
+data.setCell(9, 3, 9002);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifySwiperNextWorking')
+data.setCell(10, 2, 'tests.rooms.RoomTest')
+data.setCell(10, 3, 8829);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifySearchRoomWithDate')
+data.setCell(11, 2, 'tests.rooms.RoomTest')
+data.setCell(11, 3, 7605);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testRegisterWithInvalidCredentials')
+data.setCell(12, 2, 'tests.register.RegisterTest')
+data.setCell(12, 3, 6927);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testRegisterWithInvalidCredentials')
+data.setCell(13, 2, 'tests.register.RegisterTest')
+data.setCell(13, 3, 6473);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRegisterWithEmptyFields')
+data.setCell(14, 2, 'tests.register.RegisterTest')
+data.setCell(14, 3, 6086);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC23_UploadAvatar')
+data.setCell(15, 2, 'tests.profile.ProfileTest')
+data.setCell(15, 3, 5751);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLoginWithEmptyField')
+data.setCell(16, 2, 'tests.login.LoginTest')
+data.setCell(16, 3, 5216);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLoginWithValidCredentials')
+data.setCell(17, 2, 'tests.login.LoginTest')
+data.setCell(17, 3, 4767);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testLoginWithEmptyField')
+data.setCell(18, 2, 'tests.login.LoginTest')
+data.setCell(18, 3, 4133);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testLoginWithInvalidCredentials')
+data.setCell(19, 2, 'tests.login.LoginTest')
+data.setCell(19, 3, 4000);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLoginWithInvalidCredentials')
+data.setCell(20, 2, 'tests.login.LoginTest')
+data.setCell(20, 3, 3946);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifySearchRoomWithGuest')
+data.setCell(21, 2, 'tests.rooms.RoomTest')
+data.setCell(21, 3, 3731);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'loginByApiAndVerifyDashboard')
+data.setCell(22, 2, 'tests.LoginTest')
+data.setCell(22, 3, 2968);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifySearchRoom')
+data.setCell(23, 2, 'tests.rooms.RoomTest')
+data.setCell(23, 3, 1976);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.details.RoomDetailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.rooms.RoomTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.register.RegisterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.profile.ProfileTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.login.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.base.BaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.details.RoomDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.details.RoomDetailTest.verifyBookingSuccess())</span>
+                <span class="method-start">148 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBookingSuccess</span>
+                <span class="method-start">1530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.details.RoomDetailTest.verifyBookingWithoutLogin())</span>
+                <span class="method-start">15433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBookingWithoutLogin</span>
+                <span class="method-start">16142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.details.RoomDetailTest.verifyPriceCalculation())</span>
+                <span class="method-start">26633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPriceCalculation</span>
+                <span class="method-start">27306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52268 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.login.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testLoginWithEmptyField(framework.enums.LoginType))</span>
+                <span class="method-start">52484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyField(EMPTY_FIELD)</span>
+                <span class="method-start">53070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">58287 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testLoginWithEmptyField(framework.enums.LoginType))</span>
+                <span class="method-start">58470 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithEmptyField(EMPTY_PASSWORD)</span>
+                <span class="method-start">59144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63278 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testLoginWithInvalidCredentials(framework.enums.LoginType))</span>
+                <span class="method-start">63474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(INVALID_CREDENTIALS)</span>
+                <span class="method-start">64142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68142 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testLoginWithInvalidCredentials(framework.enums.LoginType))</span>
+                <span class="method-start">68382 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithInvalidCredentials(INVALID_EMAIL_FORMAT)</span>
+                <span class="method-start">69027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testLoginWithValidCredentials(framework.enums.LoginType))</span>
+                <span class="method-start">73129 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithValidCredentials(VALID_CREDENTIALS)</span>
+                <span class="method-start">73750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78518 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.login.LoginTest.testOpenDashboardAfterLoginSuccess())</span>
+                <span class="method-start">78744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testOpenDashboardAfterLoginSuccess</span>
+                <span class="method-start">79386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">96631 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.LoginTest.loginByApiAndVerifyDashboard())</span>
+                <span class="method-start">96777 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginByApiAndVerifyDashboard</span>
+                <span class="method-start">97433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100402 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.profile.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.profile.ProfileTest.TC20_ViewBookingHistory())</span>
+                <span class="method-start">100594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC20_ViewBookingHistory</span>
+                <span class="method-start">101253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.profile.ProfileTest.TC21_ViewProfileInformation())</span>
+                <span class="method-start">118987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC21_ViewProfileInformation</span>
+                <span class="method-start">119637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">138836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.profile.ProfileTest.TC22_UpdatePhoneNumber())</span>
+                <span class="method-start">139002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC22_UpdatePhoneNumber</span>
+                <span class="method-start">139601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">150383 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.profile.ProfileTest.TC23_UploadAvatar() throws java.lang.Exception)</span>
+                <span class="method-start">150553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC23_UploadAvatar</span>
+                <span class="method-start">151177 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156928 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.register.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.register.RegisterTest.testRegisterWithEmptyFields(framework.enums.RegisterType))</span>
+                <span class="method-start">157033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterWithEmptyFields(EMPTY_FIELD)</span>
+                <span class="method-start">157658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.register.RegisterTest.testRegisterWithInvalidCredentials(framework.enums.RegisterT...)</span>
+                <span class="method-start">163848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterWithInvalidCredentials(INVALID_CREDENTIALS)</span>
+                <span class="method-start">164548 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">171476 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.register.RegisterTest.testRegisterWithInvalidCredentials(framework.enums.RegisterT...)</span>
+                <span class="method-start">171618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterWithInvalidCredentials(INVALID_EMAIL_FORMAT)</span>
+                <span class="method-start">172287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">178761 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.register.RegisterTest.testRegisterWithInvalidCredentials(framework.enums.RegisterT...)</span>
+                <span class="method-start">178876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterWithInvalidCredentials(INVALID_PHONE)</span>
+                <span class="method-start">179521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">188523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.register.RegisterTest.testRigisterWithValidCredentials(framework.enums.RegisterTyp...)</span>
+                <span class="method-start">188682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRigisterWithValidCredentials(VALID_CREDENTIALS)</span>
+                <span class="method-start">189363 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">200945 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.rooms.RoomTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.rooms.RoomTest.verifyFilterByPriceRange())</span>
+                <span class="method-start">201098 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyFilterByPriceRange</span>
+                <span class="method-start">201762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">238635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.rooms.RoomTest.verifySearchRoom())</span>
+                <span class="method-start">238792 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchRoom</span>
+                <span class="method-start">239400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241376 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.rooms.RoomTest.verifySearchRoomWithDate())</span>
+                <span class="method-start">241502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchRoomWithDate</span>
+                <span class="method-start">242106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">249711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.rooms.RoomTest.verifySearchRoomWithGuest())</span>
+                <span class="method-start">249848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchRoomWithGuest</span>
+                <span class="method-start">250526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">254257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.rooms.RoomTest.verifySwiperNextWorking())</span>
+                <span class="method-start">254425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySwiperNextWorking</span>
+                <span class="method-start">255065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">263894 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.base.BaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">264378 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

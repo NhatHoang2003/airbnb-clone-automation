@@ -8,7 +8,10 @@
     <test name="Test Cases">
         <classes>
             <class name="tests.login.LoginTest"/>
+            <class name="tests.register.RegisterTest"/>
+            <class name="tests.profile.ProfileTest"/>
+            <class name="tests.rooms.RoomTest"/>
+            <class name="tests.details.RoomDetailTest"/>
         </classes>
     </test>
-
 </suite>

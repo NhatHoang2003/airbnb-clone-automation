@@ -18,7 +18,7 @@ public class RegisterTest extends BaseTest {
             dataProvider = "validCredentials",
             dataProviderClass = RegisterDataProvider.class
     )
-    public void testRigisterWithValidCredentials (RegisterType registerType){
+    public void testRegisterWithValidCredentials (RegisterType registerType){
 
         TestCaseData<RegisterData> testCaseData =
                 RegisterAction.registerValid(registerType);

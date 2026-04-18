@@ -51,10 +51,7 @@ public class ScreenshotUtil {
             );
 
             if (test != null) {
-                test.info(stepName)
-                        .addScreenCaptureFromPath(
-                                screenshotDir + "/" + fileName
-                        );
+                test.info(stepName);
             }
         } catch (Exception e) {
             e.printStackTrace();
