@@ -1,0 +1,6 @@
+tests\login\LoginTest.class
+tests\register\RegisterTest.class
+tests\base\BaseTest.class
+tests\details\RoomDetailTest.class
+tests\rooms\RoomTest.class
+tests\profile\ProfileTest.class

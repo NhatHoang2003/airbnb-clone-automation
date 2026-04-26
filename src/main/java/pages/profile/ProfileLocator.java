@@ -17,7 +17,7 @@ public class ProfileLocator {
     public static final By PHONE_INPUT = By.xpath("//input[@id='phone']");
     public static final By NAME_INPUT = By.xpath("//input[@id='name']");
     public static final By BIRTHDAY_INPUT = By.xpath("//input[@id='birthday']");
-    public static final By GENDER_OPTION_NAM = By.xpath("//div[@id='gender_list']//div[@aria-label='Nam']");
+    public static final By GENDER_SELECTED = By.xpath("//span[@class='ant-select-selection-item' and text()='Nam']");
     public static final By BOOKED_ROOM_FIRST_CARD = By.xpath("//h1[contains(text(),'Phòng đã thuê')]/following::div[contains(@class,'ant-card-hoverable')][1]");
 
     // Avatar upload (inside edit profile modal)

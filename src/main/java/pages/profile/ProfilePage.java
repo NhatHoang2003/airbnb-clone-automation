@@ -142,7 +142,7 @@ public class ProfilePage extends BasePage {
         WebElement birthdayInput =
                 waitUtil.waitFor(ProfileLocator.BIRTHDAY_INPUT, WaitType.VISIBLE);
         WebElement genderOptionNam =
-                waitUtil.waitFor(ProfileLocator.GENDER_OPTION_NAM, WaitType.VISIBLE);
+                waitUtil.waitFor(ProfileLocator.GENDER_SELECTED, WaitType.VISIBLE);
 
         highlight(emailInput);
         screenshotUtil.capture("Email Input Visible");

@@ -3,43 +3,15 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.register.RegisterTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="testRigisterWithValidCredentials" invocation-numbers="0"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- tests.register.RegisterTest -->
-      <class name="tests.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="loginByApiAndVerifyDashboard"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- tests.LoginTest -->
       <class name="tests.profile.ProfileTest">
         <methods>
-          <include name="TC21_ViewProfileInformation"/>
           <include name="tearDown"/>
-          <include name="TC23_UploadAvatar"/>
           <include name="setUp"/>
           <include name="afterSuite"/>
           <include name="setupSuite"/>
+          <include name="TC20_ViewBookingHistory"/>
         </methods>
       </class> <!-- tests.profile.ProfileTest -->
-      <class name="tests.login.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="afterSuite"/>
-          <include name="testOpenDashboardAfterLoginSuccess"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- tests.login.LoginTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
