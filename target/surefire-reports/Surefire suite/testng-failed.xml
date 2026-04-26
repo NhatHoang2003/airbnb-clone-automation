@@ -3,15 +3,15 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.profile.ProfileTest">
+      <class name="tests.register.RegisterTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="afterSuite"/>
+          <include name="testRegisterWithValidCredentials" invocation-numbers="0"/>
           <include name="setupSuite"/>
-          <include name="TC20_ViewBookingHistory"/>
         </methods>
-      </class> <!-- tests.profile.ProfileTest -->
+      </class> <!-- tests.register.RegisterTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

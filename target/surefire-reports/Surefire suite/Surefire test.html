@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 26 14:52:00 GMT+07:00 2026</td>
+<td>Started on:</td><td>Sun Apr 26 15:12:52 GMT+07:00 2026</td>
 </tr>
-<tr><td>Total time:</td><td>282 seconds (282655 ms)</td>
+<tr><td>Total time:</td><td>269 seconds (269626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,56 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.profile.ProfileTest.TC20_ViewBookingHistory()'><b>TC20_ViewBookingHistory</b><br>Test class: tests.profile.ProfileTest<br>Test method: TC20 - View booking history after successful booking</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;rdrNextPrevButton rdrNextButton&quot; data-old-style=&quot;&quot; style=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (775, 296). Other element would receive the click: &lt;div class=&quot;fixed inset-0 bg-white   flex items-center justify-center&quot; style=&quot;z-index: 9999;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.55)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84dd35d6606b1c2e033450b50cbab509, clickElement {id=f.48B2BF90ED20A2E4A2D4BEAB91532C82.d.97A39F990F1C27CFC3F1BDEE42CD62C9.e.818}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60218/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (84dd35d6606b1c2e033450b50cbab509)] -&gt; xpath: //button[contains(@class,&apos;rdrNextButton&apos;)]]
-Session ID: 84dd35d6606b1c2e033450b50cbab509
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at framework.actions.ElementActions.clicksBy(ElementActions.java:30)
-	at pages.details.RoomDetailPage.clickNextMonthButton(RoomDetailPage.java:48)
-	at framework.actions.RoomDetailAction.bookRoomAndGoToProfile(RoomDetailAction.java:45)
-	at tests.profile.ProfileTest.TC20_ViewBookingHistory(ProfileTest.java:45)
+<td title='tests.register.RegisterTest.testRegisterWithValidCredentials()'><b>testRegisterWithValidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: VALID_CREDENTIALS</td>
+<td><div><pre>java.lang.AssertionError: Message mismatch expected [Đăng ký thành công] but found []
+	at framework.asserts.RegisterAssertion.assertRegister(RegisterAssertion.java:11)
+	at tests.register.RegisterTest.testRegisterWithValidCredentials(RegisterTest.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1458334048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1458334048'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;rdrNextPrevButton rdrNextButton&quot; data-old-style=&quot;&quot; style=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (775, 296). Other element would receive the click: &lt;div class=&quot;fixed inset-0 bg-white   flex items-center justify-center&quot; style=&quot;z-index: 9999;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=141.0.7390.55)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84dd35d6606b1c2e033450b50cbab509, clickElement {id=f.48B2BF90ED20A2E4A2D4BEAB91532C82.d.97A39F990F1C27CFC3F1BDEE42CD62C9.e.818}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60218/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (84dd35d6606b1c2e033450b50cbab509)] -&gt; xpath: //button[contains(@class,&apos;rdrNextButton&apos;)]]
-Session ID: 84dd35d6606b1c2e033450b50cbab509
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at framework.actions.ElementActions.clicksBy(ElementActions.java:30)
-	at pages.details.RoomDetailPage.clickNextMonthButton(RoomDetailPage.java:48)
-	at framework.actions.RoomDetailAction.bookRoomAndGoToProfile(RoomDetailAction.java:45)
-	at tests.profile.ProfileTest.TC20_ViewBookingHistory(ProfileTest.java:45)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1353454153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1353454153'><pre>java.lang.AssertionError: Message mismatch expected [Đăng ký thành công] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at framework.asserts.RegisterAssertion.assertRegister(RegisterAssertion.java:11)
+	at tests.register.RegisterTest.testRegisterWithValidCredentials(RegisterTest.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -158,8 +122,8 @@ Session ID: 84dd35d6606b1c2e033450b50cbab509
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>16</td>
-<td>tests.profile.ProfileTest@3b2da18f</td></tr>
+<td>14</td>
+<td>tests.register.RegisterTest@3b2da18f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -170,95 +134,90 @@ Session ID: 84dd35d6606b1c2e033450b50cbab509
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_CREDENTIALS</td>
-<td></td>
-<td>11</td>
-<td>tests.register.RegisterTest@5906ebcb</td></tr>
-<tr>
-<td title='tests.login.LoginTest.testLoginWithEmptyField()'><b>testLoginWithEmptyField</b><br>Test class: tests.login.LoginTest<br>Parameters: EMPTY_PASSWORD</td>
-<td></td>
-<td>5</td>
-<td>tests.login.LoginTest@6b419da</td></tr>
-<tr>
-<td title='tests.register.RegisterTest.testRegisterWithValidCredentials()'><b>testRegisterWithValidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: VALID_CREDENTIALS</td>
-<td></td>
-<td>10</td>
-<td>tests.register.RegisterTest@5906ebcb</td></tr>
-<tr>
-<td title='tests.login.LoginTest.testLoginWithValidCredentials()'><b>testLoginWithValidCredentials</b><br>Test class: tests.login.LoginTest<br>Test method: TC01: Đăng ký thành công với thông tin hợp lệ<br>Parameters: VALID_CREDENTIALS</td>
-<td></td>
-<td>7</td>
-<td>tests.login.LoginTest@6b419da</td></tr>
-<tr>
 <td title='tests.rooms.RoomTest.verifySearchRoomWithDate()'><b>verifySearchRoomWithDate</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify user can search room with date successfully</td>
 <td></td>
-<td>12</td>
-<td>tests.rooms.RoomTest@258e2e41</td></tr>
+<td>11</td>
+<td>tests.rooms.RoomTest@5906ebcb</td></tr>
 <tr>
-<td title='tests.rooms.RoomTest.verifySwiperNextWorking()'><b>verifySwiperNextWorking</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify that the system correctly filters products by price range only.</td>
+<td title='tests.rooms.RoomTest.verifySearchRoomWithGuest()'><b>verifySearchRoomWithGuest</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify user can search room with guest successfully</td>
 <td></td>
-<td>12</td>
-<td>tests.rooms.RoomTest@258e2e41</td></tr>
+<td>6</td>
+<td>tests.rooms.RoomTest@5906ebcb</td></tr>
 <tr>
 <td title='tests.login.LoginTest.testLoginWithEmptyField()'><b>testLoginWithEmptyField</b><br>Test class: tests.login.LoginTest<br>Parameters: EMPTY_FIELD</td>
 <td></td>
 <td>5</td>
-<td>tests.login.LoginTest@6b419da</td></tr>
-<tr>
-<td title='tests.details.RoomDetailTest.verifyPriceCalculation()'><b>verifyPriceCalculation</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC17 - Validate total price calculation including cleaning fee</td>
-<td></td>
-<td>14</td>
-<td>tests.details.RoomDetailTest@14ec4505</td></tr>
-<tr>
-<td title='tests.login.LoginTest.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: tests.login.LoginTest<br>Parameters: INVALID_EMAIL_FORMAT</td>
-<td></td>
-<td>5</td>
-<td>tests.login.LoginTest@6b419da</td></tr>
-<tr>
-<td title='tests.login.LoginTest.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: tests.login.LoginTest<br>Parameters: INVALID_CREDENTIALS</td>
-<td></td>
-<td>7</td>
-<td>tests.login.LoginTest@6b419da</td></tr>
-<tr>
-<td title='tests.rooms.RoomTest.verifyFilterByPriceRange()'><b>verifyFilterByPriceRange</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify that the system correctly filters products by price range only.</td>
-<td></td>
-<td>74</td>
-<td>tests.rooms.RoomTest@258e2e41</td></tr>
-<tr>
-<td title='tests.details.RoomDetailTest.verifyBookingWithoutLogin()'><b>verifyBookingWithoutLogin</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC18 - Booking fails when not logged in</td>
-<td></td>
-<td>13</td>
-<td>tests.details.RoomDetailTest@14ec4505</td></tr>
-<tr>
-<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_EMAIL_FORMAT</td>
-<td></td>
-<td>10</td>
-<td>tests.register.RegisterTest@5906ebcb</td></tr>
-<tr>
-<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_PHONE</td>
-<td></td>
-<td>11</td>
-<td>tests.register.RegisterTest@5906ebcb</td></tr>
-<tr>
-<td title='tests.rooms.RoomTest.verifySearchRoom()'><b>verifySearchRoom</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify user can search room successfully</td>
-<td></td>
-<td>3</td>
-<td>tests.rooms.RoomTest@258e2e41</td></tr>
-<tr>
-<td title='tests.details.RoomDetailTest.verifyBookingSuccess()'><b>verifyBookingSuccess</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC16 - Booking success</td>
-<td></td>
-<td>22</td>
-<td>tests.details.RoomDetailTest@14ec4505</td></tr>
+<td>tests.login.LoginTest@7920ba90</td></tr>
 <tr>
 <td title='tests.register.RegisterTest.testRegisterWithEmptyFields()'><b>testRegisterWithEmptyFields</b><br>Test class: tests.register.RegisterTest<br>Parameters: EMPTY_FIELD</td>
 <td></td>
-<td>9</td>
-<td>tests.register.RegisterTest@5906ebcb</td></tr>
+<td>11</td>
+<td>tests.register.RegisterTest@3b2da18f</td></tr>
 <tr>
-<td title='tests.rooms.RoomTest.verifySearchRoomWithGuest()'><b>verifySearchRoomWithGuest</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify user can search room with guest successfully</td>
+<td title='tests.login.LoginTest.testLoginWithEmptyField()'><b>testLoginWithEmptyField</b><br>Test class: tests.login.LoginTest<br>Parameters: EMPTY_PASSWORD</td>
 <td></td>
-<td>8</td>
-<td>tests.rooms.RoomTest@258e2e41</td></tr>
+<td>6</td>
+<td>tests.login.LoginTest@7920ba90</td></tr>
+<tr>
+<td title='tests.login.LoginTest.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: tests.login.LoginTest<br>Parameters: INVALID_CREDENTIALS</td>
+<td></td>
+<td>5</td>
+<td>tests.login.LoginTest@7920ba90</td></tr>
+<tr>
+<td title='tests.rooms.RoomTest.verifySearchRoom()'><b>verifySearchRoom</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify user can search room successfully</td>
+<td></td>
+<td>4</td>
+<td>tests.rooms.RoomTest@5906ebcb</td></tr>
+<tr>
+<td title='tests.login.LoginTest.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: tests.login.LoginTest<br>Parameters: INVALID_EMAIL_FORMAT</td>
+<td></td>
+<td>11</td>
+<td>tests.login.LoginTest@7920ba90</td></tr>
+<tr>
+<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_PHONE</td>
+<td></td>
+<td>10</td>
+<td>tests.register.RegisterTest@3b2da18f</td></tr>
+<tr>
+<td title='tests.login.LoginTest.testLoginWithValidCredentials()'><b>testLoginWithValidCredentials</b><br>Test class: tests.login.LoginTest<br>Test method: TC01: Đăng ký thành công với thông tin hợp lệ<br>Parameters: VALID_CREDENTIALS</td>
+<td></td>
+<td>7</td>
+<td>tests.login.LoginTest@7920ba90</td></tr>
+<tr>
+<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_CREDENTIALS</td>
+<td></td>
+<td>11</td>
+<td>tests.register.RegisterTest@3b2da18f</td></tr>
+<tr>
+<td title='tests.register.RegisterTest.testRegisterWithInvalidCredentials()'><b>testRegisterWithInvalidCredentials</b><br>Test class: tests.register.RegisterTest<br>Parameters: INVALID_EMAIL_FORMAT</td>
+<td></td>
+<td>9</td>
+<td>tests.register.RegisterTest@3b2da18f</td></tr>
+<tr>
+<td title='tests.rooms.RoomTest.verifyFilterByPriceRange()'><b>verifyFilterByPriceRange</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify that the system correctly filters products by price range only.</td>
+<td></td>
+<td>77</td>
+<td>tests.rooms.RoomTest@5906ebcb</td></tr>
+<tr>
+<td title='tests.details.RoomDetailTest.verifyBookingWithoutLogin()'><b>verifyBookingWithoutLogin</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC18 - Booking fails when not logged in</td>
+<td></td>
+<td>11</td>
+<td>tests.details.RoomDetailTest@e50a6f6</td></tr>
+<tr>
+<td title='tests.details.RoomDetailTest.verifyPriceCalculation()'><b>verifyPriceCalculation</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC17 - Validate total price calculation including cleaning fee</td>
+<td></td>
+<td>16</td>
+<td>tests.details.RoomDetailTest@e50a6f6</td></tr>
+<tr>
+<td title='tests.details.RoomDetailTest.verifyBookingSuccess()'><b>verifyBookingSuccess</b><br>Test class: tests.details.RoomDetailTest<br>Test method: TC16 - Booking success</td>
+<td></td>
+<td>16</td>
+<td>tests.details.RoomDetailTest@e50a6f6</td></tr>
+<tr>
+<td title='tests.rooms.RoomTest.verifySwiperNextWorking()'><b>verifySwiperNextWorking</b><br>Test class: tests.rooms.RoomTest<br>Test method: Verify that the system correctly filters products by price range only.</td>
+<td></td>
+<td>13</td>
+<td>tests.rooms.RoomTest@5906ebcb</td></tr>
 </table><p>
 </body>
 </html>

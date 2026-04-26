@@ -1,34 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 283.9 s <<< FAILURE! -- in TestSuite
-tests.profile.ProfileTest.TC20_ViewBookingHistory -- Time elapsed: 16.59 s <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button type="button" class="rdrNextPrevButton rdrNextButton" data-old-style="" style="">...</button> is not clickable at point (775, 296). Other element would receive the click: <div class="fixed inset-0 bg-white   flex items-center justify-center" style="z-index: 9999;">...</div>
-  (Session info: chrome=141.0.7390.55)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [84dd35d6606b1c2e033450b50cbab509, clickElement {id=f.48B2BF90ED20A2E4A2D4BEAB91532C82.d.97A39F990F1C27CFC3F1BDEE42CD62C9.e.818}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.55, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60218}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60218/devtoo..., se:cdpVersion: 141.0.7390.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (84dd35d6606b1c2e033450b50cbab509)] -> xpath: //button[contains(@class,'rdrNextButton')]]
-Session ID: 84dd35d6606b1c2e033450b50cbab509
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at framework.actions.ElementActions.clicksBy(ElementActions.java:30)
-	at pages.details.RoomDetailPage.clickNextMonthButton(RoomDetailPage.java:48)
-	at framework.actions.RoomDetailAction.bookRoomAndGoToProfile(RoomDetailAction.java:45)
-	at tests.profile.ProfileTest.TC20_ViewBookingHistory(ProfileTest.java:45)
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 270.7 s <<< FAILURE! -- in TestSuite
+tests.register.RegisterTest.testRegisterWithValidCredentials[VALID_CREDENTIALS](1) -- Time elapsed: 14.80 s <<< FAILURE!
+java.lang.AssertionError: Message mismatch expected [Đăng ký thành công] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at framework.asserts.RegisterAssertion.assertRegister(RegisterAssertion.java:11)
+	at tests.register.RegisterTest.testRegisterWithValidCredentials(RegisterTest.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
