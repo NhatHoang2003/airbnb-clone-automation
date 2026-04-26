@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-26T15:12:52 GMT+07:00" name="Surefire suite" finished-at="2026-04-26T15:17:21 GMT+07:00" duration-ms="269626">
+  <suite started-at="2026-04-26T15:22:19 GMT+07:00" name="Surefire suite" finished-at="2026-04-26T15:26:40 GMT+07:00" duration-ms="261227">
     <groups>
     </groups>
-    <test started-at="2026-04-26T15:12:52 GMT+07:00" name="Surefire test" finished-at="2026-04-26T15:17:21 GMT+07:00" duration-ms="269626">
+    <test started-at="2026-04-26T15:22:19 GMT+07:00" name="Surefire test" finished-at="2026-04-26T15:26:40 GMT+07:00" duration-ms="261227">
       <class name="tests.register.RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:20 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:21 GMT+07:00" duration-ms="677" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:23:40 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:41 GMT+07:00" duration-ms="639" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegisterWithEmptyFields(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:21 GMT+07:00" name="testRegisterWithEmptyFields" data-provider="emptyFields" finished-at="2026-04-26T15:14:32 GMT+07:00" duration-ms="11255" status="PASS">
+        <test-method signature="testRegisterWithEmptyFields(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:23:41 GMT+07:00" name="testRegisterWithEmptyFields" data-provider="emptyFields" finished-at="2026-04-26T15:23:50 GMT+07:00" duration-ms="9764" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterWithEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:32 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:14:33 GMT+07:00" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:23:50 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:51 GMT+07:00" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:33 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:33 GMT+07:00" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:23:51 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:51 GMT+07:00" duration-ms="578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:33 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:14:45 GMT+07:00" duration-ms="11368" status="PASS">
+        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:23:51 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:24:03 GMT+07:00" duration-ms="11380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:45 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:14:45 GMT+07:00" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:03 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:24:03 GMT+07:00" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:45 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:46 GMT+07:00" duration-ms="657" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:03 GMT+07:00" name="setUp" finished-at="2026-04-26T15:24:04 GMT+07:00" duration-ms="671" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:46 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:14:55 GMT+07:00" duration-ms="9795" status="PASS">
+        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:04 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:24:13 GMT+07:00" duration-ms="9012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,11 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:55 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:14:57 GMT+07:00" duration-ms="1731" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:13 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:24:13 GMT+07:00" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:57 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:58 GMT+07:00" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:13 GMT+07:00" name="setUp" finished-at="2026-04-26T15:24:13 GMT+07:00" duration-ms="584" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:14:58 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:15:08 GMT+07:00" duration-ms="10277" status="PASS">
+        <test-method signature="testRegisterWithInvalidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:13 GMT+07:00" name="testRegisterWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:24:23 GMT+07:00" duration-ms="9413" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,11 +107,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:15:08 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:15:08 GMT+07:00" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:23 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:24:23 GMT+07:00" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:15:08 GMT+07:00" name="setUp" finished-at="2026-04-26T15:15:09 GMT+07:00" duration-ms="756" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:23 GMT+07:00" name="setUp" finished-at="2026-04-26T15:24:24 GMT+07:00" duration-ms="665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegisterWithValidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:15:09 GMT+07:00" name="testRegisterWithValidCredentials" data-provider="validCredentials" finished-at="2026-04-26T15:15:24 GMT+07:00" duration-ms="14782" status="FAIL">
+        <test-method signature="testRegisterWithValidCredentials(framework.enums.RegisterType)[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:24 GMT+07:00" name="testRegisterWithValidCredentials" data-provider="validCredentials" finished-at="2026-04-26T15:24:35 GMT+07:00" duration-ms="11019" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,63 +130,16 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Message mismatch expected [Đăng ký thành công] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Message mismatch expected [Đăng ký thành công] but found []
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at framework.asserts.RegisterAssertion.assertRegister(RegisterAssertion.java:11)
-at tests.register.RegisterTest.testRegisterWithValidCredentials(RegisterTest.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegisterWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:15:24 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:15:24 GMT+07:00" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.register.RegisterTest@3b2da18f]" started-at="2026-04-26T15:24:35 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:24:35 GMT+07:00" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.register.RegisterTest -->
       <class name="tests.login.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:39 GMT+07:00" name="setUp" finished-at="2026-04-26T15:13:39 GMT+07:00" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:08 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:09 GMT+07:00" duration-ms="655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +150,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithEmptyField(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:39 GMT+07:00" name="testLoginWithEmptyField" data-provider="emptyFields" finished-at="2026-04-26T15:13:45 GMT+07:00" duration-ms="5576" status="PASS">
+        <test-method signature="testLoginWithEmptyField(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:09 GMT+07:00" name="testLoginWithEmptyField" data-provider="emptyFields" finished-at="2026-04-26T15:23:14 GMT+07:00" duration-ms="5266" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -208,11 +161,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithEmptyField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:45 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:45 GMT+07:00" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:14 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:14 GMT+07:00" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:45 GMT+07:00" name="setUp" finished-at="2026-04-26T15:13:46 GMT+07:00" duration-ms="591" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:14 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:15 GMT+07:00" duration-ms="661" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,7 +176,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithEmptyField(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:46 GMT+07:00" name="testLoginWithEmptyField" data-provider="emptyFields" finished-at="2026-04-26T15:13:52 GMT+07:00" duration-ms="6228" status="PASS">
+        <test-method signature="testLoginWithEmptyField(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:15 GMT+07:00" name="testLoginWithEmptyField" data-provider="emptyFields" finished-at="2026-04-26T15:23:20 GMT+07:00" duration-ms="5235" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,11 +187,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithEmptyField -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:52 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:52 GMT+07:00" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:20 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:20 GMT+07:00" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:52 GMT+07:00" name="setUp" finished-at="2026-04-26T15:13:53 GMT+07:00" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:20 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:21 GMT+07:00" duration-ms="651" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,7 +202,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithInvalidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:53 GMT+07:00" name="testLoginWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:13:59 GMT+07:00" duration-ms="5703" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:21 GMT+07:00" name="testLoginWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:23:26 GMT+07:00" duration-ms="5371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,11 +213,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:59 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:59 GMT+07:00" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:26 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:27 GMT+07:00" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:13:59 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:00 GMT+07:00" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:27 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:27 GMT+07:00" duration-ms="591" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,7 +228,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithInvalidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:14:00 GMT+07:00" name="testLoginWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:14:11 GMT+07:00" duration-ms="11770" status="PASS">
+        <test-method signature="testLoginWithInvalidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:27 GMT+07:00" name="testLoginWithInvalidCredentials" data-provider="invalidCredentials" finished-at="2026-04-26T15:23:33 GMT+07:00" duration-ms="5537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,11 +239,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:14:11 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:14:12 GMT+07:00" duration-ms="320" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:33 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:33 GMT+07:00" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:14:12 GMT+07:00" name="setUp" finished-at="2026-04-26T15:14:12 GMT+07:00" duration-ms="631" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:33 GMT+07:00" name="setUp" finished-at="2026-04-26T15:23:34 GMT+07:00" duration-ms="593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -301,7 +254,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithValidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:14:12 GMT+07:00" name="testLoginWithValidCredentials" description="TC01: Đăng ký thành công với thông tin hợp lệ" data-provider="validCredentials" finished-at="2026-04-26T15:14:20 GMT+07:00" duration-ms="7917" status="PASS">
+        <test-method signature="testLoginWithValidCredentials(framework.enums.LoginType)[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:34 GMT+07:00" name="testLoginWithValidCredentials" description="TC01: Đăng ký thành công với thông tin hợp lệ" data-provider="validCredentials" finished-at="2026-04-26T15:23:40 GMT+07:00" duration-ms="6166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -312,13 +265,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:14:20 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:14:20 GMT+07:00" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.login.LoginTest@7920ba90]" started-at="2026-04-26T15:23:40 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:40 GMT+07:00" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.login.LoginTest -->
       <class name="tests.details.RoomDetailTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:12:52 GMT+07:00" name="setUp" finished-at="2026-04-26T15:12:53 GMT+07:00" duration-ms="871" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:19 GMT+07:00" name="setUp" finished-at="2026-04-26T15:22:20 GMT+07:00" duration-ms="879" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,15 +282,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyBookingSuccess()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:12:53 GMT+07:00" name="verifyBookingSuccess" description="TC16 - Booking success" finished-at="2026-04-26T15:13:09 GMT+07:00" duration-ms="16354" status="PASS">
+        <test-method signature="verifyBookingSuccess()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:20 GMT+07:00" name="verifyBookingSuccess" description="TC16 - Booking success" finished-at="2026-04-26T15:22:37 GMT+07:00" duration-ms="17127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBookingSuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:09 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:09 GMT+07:00" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:37 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:22:37 GMT+07:00" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:09 GMT+07:00" name="setUp" finished-at="2026-04-26T15:13:10 GMT+07:00" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:37 GMT+07:00" name="setUp" finished-at="2026-04-26T15:22:38 GMT+07:00" duration-ms="641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -348,15 +301,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyBookingWithoutLogin()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:10 GMT+07:00" name="verifyBookingWithoutLogin" description="TC18 - Booking fails when not logged in" finished-at="2026-04-26T15:13:21 GMT+07:00" duration-ms="11072" status="PASS">
+        <test-method signature="verifyBookingWithoutLogin()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:38 GMT+07:00" name="verifyBookingWithoutLogin" description="TC18 - Booking fails when not logged in" finished-at="2026-04-26T15:22:51 GMT+07:00" duration-ms="12651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBookingWithoutLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:21 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:21 GMT+07:00" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:51 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:22:51 GMT+07:00" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:21 GMT+07:00" name="setUp" finished-at="2026-04-26T15:13:22 GMT+07:00" duration-ms="789" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:51 GMT+07:00" name="setUp" finished-at="2026-04-26T15:22:52 GMT+07:00" duration-ms="629" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -367,17 +320,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPriceCalculation()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:22 GMT+07:00" name="verifyPriceCalculation" description="TC17 - Validate total price calculation including cleaning fee" finished-at="2026-04-26T15:13:38 GMT+07:00" duration-ms="16784" status="PASS">
+        <test-method signature="verifyPriceCalculation()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:22:52 GMT+07:00" name="verifyPriceCalculation" description="TC17 - Validate total price calculation including cleaning fee" finished-at="2026-04-26T15:23:08 GMT+07:00" duration-ms="16468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceCalculation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:13:38 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:13:39 GMT+07:00" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.details.RoomDetailTest@e50a6f6]" started-at="2026-04-26T15:23:08 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:23:08 GMT+07:00" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.details.RoomDetailTest -->
       <class name="tests.rooms.RoomTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:15:24 GMT+07:00" name="setUp" finished-at="2026-04-26T15:15:25 GMT+07:00" duration-ms="697" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:24:35 GMT+07:00" name="setUp" finished-at="2026-04-26T15:24:35 GMT+07:00" duration-ms="666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,15 +341,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyFilterByPriceRange()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:15:25 GMT+07:00" name="verifyFilterByPriceRange" description="Verify that the system correctly filters products by price range only." finished-at="2026-04-26T15:16:42 GMT+07:00" duration-ms="77168" status="PASS">
+        <test-method signature="verifyFilterByPriceRange()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:24:35 GMT+07:00" name="verifyFilterByPriceRange" description="Verify that the system correctly filters products by price range only." finished-at="2026-04-26T15:25:51 GMT+07:00" duration-ms="75983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFilterByPriceRange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:42 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:16:42 GMT+07:00" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:25:51 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:25:52 GMT+07:00" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:42 GMT+07:00" name="setUp" finished-at="2026-04-26T15:16:43 GMT+07:00" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:25:52 GMT+07:00" name="setUp" finished-at="2026-04-26T15:25:52 GMT+07:00" duration-ms="607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -407,15 +360,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchRoom()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:43 GMT+07:00" name="verifySearchRoom" description="Verify user can search room successfully" finished-at="2026-04-26T15:16:47 GMT+07:00" duration-ms="4493" status="PASS">
+        <test-method signature="verifySearchRoom()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:25:52 GMT+07:00" name="verifySearchRoom" description="Verify user can search room successfully" finished-at="2026-04-26T15:26:13 GMT+07:00" duration-ms="20471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchRoom -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:47 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:16:48 GMT+07:00" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:13 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:26:13 GMT+07:00" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:48 GMT+07:00" name="setUp" finished-at="2026-04-26T15:16:48 GMT+07:00" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:13 GMT+07:00" name="setUp" finished-at="2026-04-26T15:26:14 GMT+07:00" duration-ms="621" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -426,15 +379,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchRoomWithDate()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:16:48 GMT+07:00" name="verifySearchRoomWithDate" description="Verify user can search room with date successfully" finished-at="2026-04-26T15:17:00 GMT+07:00" duration-ms="11412" status="PASS">
+        <test-method signature="verifySearchRoomWithDate()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:14 GMT+07:00" name="verifySearchRoomWithDate" description="Verify user can search room with date successfully" finished-at="2026-04-26T15:26:22 GMT+07:00" duration-ms="8238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchRoomWithDate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:00 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:17:00 GMT+07:00" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:22 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:26:22 GMT+07:00" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:00 GMT+07:00" name="setUp" finished-at="2026-04-26T15:17:01 GMT+07:00" duration-ms="590" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:22 GMT+07:00" name="setUp" finished-at="2026-04-26T15:26:23 GMT+07:00" duration-ms="577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -445,15 +398,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchRoomWithGuest()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:01 GMT+07:00" name="verifySearchRoomWithGuest" description="Verify user can search room with guest successfully" finished-at="2026-04-26T15:17:07 GMT+07:00" duration-ms="6121" status="PASS">
+        <test-method signature="verifySearchRoomWithGuest()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:23 GMT+07:00" name="verifySearchRoomWithGuest" description="Verify user can search room with guest successfully" finished-at="2026-04-26T15:26:27 GMT+07:00" duration-ms="4836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchRoomWithGuest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:07 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:17:07 GMT+07:00" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:27 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:26:28 GMT+07:00" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:07 GMT+07:00" name="setUp" finished-at="2026-04-26T15:17:08 GMT+07:00" duration-ms="710" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:28 GMT+07:00" name="setUp" finished-at="2026-04-26T15:26:28 GMT+07:00" duration-ms="640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -464,21 +417,21 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySwiperNextWorking()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:08 GMT+07:00" name="verifySwiperNextWorking" description="Verify that the system correctly filters products by price range only." finished-at="2026-04-26T15:17:21 GMT+07:00" duration-ms="13077" status="PASS">
+        <test-method signature="verifySwiperNextWorking()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:28 GMT+07:00" name="verifySwiperNextWorking" description="Verify that the system correctly filters products by price range only." finished-at="2026-04-26T15:26:40 GMT+07:00" duration-ms="11806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySwiperNextWorking -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:17:21 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:17:21 GMT+07:00" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.rooms.RoomTest@5906ebcb]" started-at="2026-04-26T15:26:40 GMT+07:00" name="tearDown" finished-at="2026-04-26T15:26:40 GMT+07:00" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.rooms.RoomTest -->
       <class name="tests.base.BaseTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.base.BaseTest@2aece37d]" started-at="2026-04-26T15:12:52 GMT+07:00" name="setupSuite" finished-at="2026-04-26T15:12:52 GMT+07:00" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.base.BaseTest@2aece37d]" started-at="2026-04-26T15:22:19 GMT+07:00" name="setupSuite" finished-at="2026-04-26T15:22:19 GMT+07:00" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.base.BaseTest@2aece37d]" started-at="2026-04-26T15:17:22 GMT+07:00" name="afterSuite" finished-at="2026-04-26T15:17:22 GMT+07:00" duration-ms="45" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.base.BaseTest@2aece37d]" started-at="2026-04-26T15:26:41 GMT+07:00" name="afterSuite" finished-at="2026-04-26T15:26:41 GMT+07:00" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
