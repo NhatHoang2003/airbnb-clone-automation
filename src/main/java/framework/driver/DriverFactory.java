@@ -41,6 +41,7 @@ public final class DriverFactory {
         
         // Add options để tránh session disconnect
         options.addArguments(
+                "--headless=new",
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
                 "--disable-gpu",
@@ -48,7 +49,8 @@ public final class DriverFactory {
                 "--disable-background-networking",
                 "--disable-breakpad",
                 "--disable-client-side-phishing-detection",
-                "--disable-hang-monitor"
+                "--disable-hang-monitor",
+                "--window-size=1920,1080"
         );
         
         return new ChromeDriver(options);
